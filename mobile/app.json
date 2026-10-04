@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Kuraz",
+    "slug": "kuraz",
+    "scheme": "kuraz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F5F6FA",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "et.kuraz.app"
+    },
+    "android": {
+      "package": "et.kuraz.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A9BF5",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 140,
+          "resizeMode": "contain",
+          "backgroundColor": "#1A2A6C"
+        }
+      ],
+      "expo-video",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Kuraz uses your photos to set your profile picture."
+        }
+      ],
+      "expo-font",
+      "expo-status-bar",
+      "expo-image"
+    ]
+  }
+}

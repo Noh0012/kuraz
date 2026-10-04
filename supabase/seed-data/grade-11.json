@@ -1,0 +1,605 @@
+{
+  "grade": 11,
+  "subjects": [
+    {
+      "key": "math",
+      "name": "Mathematics",
+      "teacher_name": "Mr. Dawit Bekele",
+      "chapters": [
+        {
+          "title": "Relations and Functions",
+          "videos": [
+            {
+              "title": "Relations, Domain and Range",
+              "description": "Defines a relation as a set of ordered pairs, shows how to find its domain and range from lists, graphs and formulas, and introduces the inverse of a relation.",
+              "duration_minutes": 22
+            },
+            {
+              "title": "Types of Functions: One-to-One and Onto",
+              "description": "Uses arrow diagrams and the horizontal line test to classify functions as one-to-one, onto or both, and explains which functions have inverse functions.",
+              "duration_minutes": 28
+            },
+            {
+              "title": "Composition and Inverse of Functions",
+              "description": "Works through composing two functions and finding the domain of a composite function, then computes the inverse of a one-to-one function step by step.",
+              "duration_minutes": 34
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which of the following functions from ℝ to ℝ is one-to-one?",
+              "options": ["f(x) = x²", "f(x) = |x|", "f(x) = cos x", "f(x) = x³ + 1"],
+              "answer": "D",
+              "explanation": "f(x) = x³ + 1 is strictly increasing, so different inputs always give different outputs. The other three fail the horizontal line test: for example (−2)² = 2², |−1| = |1| and cos 0 = cos 2π.",
+              "difficulty": 1
+            },
+            {
+              "stem": "If f(x) = 2x + 1 and g(x) = x², what is (f∘g)(3)?",
+              "options": ["49", "16", "19", "63"],
+              "answer": "C",
+              "explanation": "(f∘g)(3) = f(g(3)). First g(3) = 3² = 9, then f(9) = 2(9) + 1 = 19. Note that (g∘f)(3) = g(7) = 49 is a different value.",
+              "difficulty": 2
+            },
+            {
+              "stem": "What is the inverse of the function f(x) = (3x − 2)/5?",
+              "options": ["f⁻¹(x) = (5x + 2)/3", "f⁻¹(x) = (5x − 2)/3", "f⁻¹(x) = (3x + 2)/5", "f⁻¹(x) = 5/(3x − 2)"],
+              "answer": "A",
+              "explanation": "Write y = (3x − 2)/5 and solve for x: 5y = 3x − 2, so x = (5y + 2)/3. Interchanging x and y gives f⁻¹(x) = (5x + 2)/3.",
+              "difficulty": 2
+            },
+            {
+              "stem": "If f(x) = 1/(x − 2) and g(x) = √x, what is the domain of f∘g?",
+              "options": ["x ≥ 0", "x ≥ 0 and x ≠ 4", "x ≠ 2", "x > 2"],
+              "answer": "B",
+              "explanation": "(f∘g)(x) = f(√x) = 1/(√x − 2). We need x ≥ 0 so that √x is defined, and √x ≠ 2, i.e. x ≠ 4, to avoid division by zero.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Matrices",
+          "videos": [
+            {
+              "title": "Types of Matrices and Equality of Matrices",
+              "description": "Introduces the order of a matrix and special matrices such as row, column, square, diagonal, identity and zero matrices, and states when two matrices are equal.",
+              "duration_minutes": 20
+            },
+            {
+              "title": "Operations on Matrices",
+              "description": "Covers matrix addition, scalar multiplication, the row-by-column rule for multiplying matrices and the transpose, with attention to when a product is defined.",
+              "duration_minutes": 38
+            },
+            {
+              "title": "Solving Linear Systems by Gaussian Elimination",
+              "description": "Uses elementary row operations to reduce an augmented matrix to row-echelon form and solve a system of three linear equations in three unknowns.",
+              "duration_minutes": 42
+            }
+          ],
+          "questions": [
+            {
+              "stem": "If A is a 2 × 3 matrix and B is a 3 × 4 matrix, what is the order of the product AB?",
+              "options": ["2 × 4", "3 × 3", "4 × 2", "AB is not defined"],
+              "answer": "A",
+              "explanation": "AB is defined because the number of columns of A (3) equals the number of rows of B (3). The product has the number of rows of A and the number of columns of B, so it is 2 × 4.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Let A = [1 2; 3 4] and B = [2 0; 1 −1], where a semicolon separates the rows. What is AB?",
+              "options": ["[2 4; −2 −2]", "[2 0; 3 −4]", "[4 −2; 10 −4]", "[3 2; 4 3]"],
+              "answer": "C",
+              "explanation": "Multiply rows of A by columns of B: the first row is (1·2 + 2·1, 1·0 + 2·(−1)) = (4, −2) and the second row is (3·2 + 4·1, 3·0 + 4·(−1)) = (10, −4). So AB = [4 −2; 10 −4], which is different from BA = [2 4; −2 −2].",
+              "difficulty": 2
+            },
+            {
+              "stem": "For matrices A and B such that the product AB is defined, the transpose (AB)ᵀ is always equal to:",
+              "options": ["AᵀBᵀ", "BA", "(BA)ᵀ", "BᵀAᵀ"],
+              "answer": "D",
+              "explanation": "The transpose of a product is the product of the transposes in reverse order: (AB)ᵀ = BᵀAᵀ. In general AᵀBᵀ (which equals (BA)ᵀ) is different, and it may not even be defined when A and B are not square.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Solve the system x + y + z = 6, 2x − y + z = 3, x + 2y − z = 2 by Gaussian elimination. What is the solution (x, y, z)?",
+              "options": ["(2, 1, 3)", "(1, 2, 3)", "(3, 2, 1)", "(1, 3, 2)"],
+              "answer": "B",
+              "explanation": "R₂ − 2R₁ gives −3y − z = −9 and R₃ − R₁ gives y − 2z = −4, so y = 2z − 4. Substituting: −3(2z − 4) − z = −9, so −7z = −21 and z = 3; then y = 2 and x = 6 − 2 − 3 = 1.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "english",
+      "name": "English",
+      "teacher_name": "Ms. Hiwot Alemu",
+      "chapters": [
+        {
+          "title": "Environmental Hazards",
+          "videos": [
+            {
+              "title": "Listening for Gist and Details: Floods and Droughts",
+              "description": "Practises listening for the main message and for specific details in a radio report on seasonal floods and drought in Ethiopia.",
+              "duration_minutes": 18
+            },
+            {
+              "title": "Guessing Word Meanings from Context",
+              "description": "Shows how to use context clues such as definitions, examples and contrasts to work out unfamiliar words in texts about natural hazards.",
+              "duration_minutes": 22
+            },
+            {
+              "title": "Punctuation: Commas, Semicolons and Colons",
+              "description": "Reviews the correct use of commas, semicolons and colons, and shows how to avoid comma splices and run-on sentences.",
+              "duration_minutes": 25
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Read the sentence: 'After weeks of heavy rain, the river overflowed and inundated the farms near the town.' What does 'inundated' mean in this sentence?",
+              "options": ["dried out", "flooded", "fenced", "fertilised"],
+              "answer": "B",
+              "explanation": "The context of heavy rain and an overflowing river shows that water covered the farms, so 'inundated' means flooded.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Which sentence is punctuated correctly?",
+              "options": [
+                "Deforestation causes soil erosion, it also destroys the habitats of many animals.",
+                "Deforestation causes soil erosion it also destroys the habitats of many animals.",
+                "Deforestation causes soil erosion; it also destroys the habitats of many animals.",
+                "Deforestation causes; soil erosion and it also destroys the habitats of many animals."
+              ],
+              "answer": "C",
+              "explanation": "A semicolon correctly joins two closely related independent clauses. Joining them with only a comma creates a comma splice, joining them with no punctuation creates a run-on sentence, and a semicolon cannot separate a verb from its object.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Read the passage and answer the question. 'Drought is often called a creeping hazard. Unlike an earthquake, which strikes in seconds, a drought develops slowly over months as the rains fail and wells dry up. By the time people recognise it, crops have already failed and livestock are dying.' What is the main idea of the passage?",
+              "options": [
+                "Drought develops gradually, so its damage is often recognised too late.",
+                "Earthquakes are more dangerous than droughts.",
+                "Wells dry up because people use too much water.",
+                "Livestock suffer more from earthquakes than from drought."
+              ],
+              "answer": "A",
+              "explanation": "The passage contrasts the slow development of drought with sudden hazards and stresses that people notice it only after crops and livestock are already lost. The other options are either not stated or contradict the passage.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Read the passage and answer the question. 'Every rainy season, families in the lowland villages near the river move their grain stores onto raised wooden platforms and keep their goats on the hill behind the school. The elders say this practice began after the great flood that swept away their grandparents' harvest.' What can be inferred from the passage?",
+              "options": [
+                "The villages have never experienced a serious flood.",
+                "The government forces the villagers to build platforms.",
+                "Goats are kept on the hill because they dislike wet grass.",
+                "Experience of a past flood taught the villagers to protect their food and animals."
+              ],
+              "answer": "D",
+              "explanation": "The villagers take precautions every rainy season, and the elders link this habit to a past flood, so we can infer that experience taught them to protect their food and animals. The passage says nothing about government orders or goats disliking grass, and the great flood shows the area has flooded before.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Civilization",
+          "videos": [
+            {
+              "title": "Reading: Ancient Civilizations of Ethiopia",
+              "description": "Develops skimming, scanning and summarizing skills using texts about the civilizations of Aksum, Lalibela and Gondar.",
+              "duration_minutes": 24
+            },
+            {
+              "title": "Defining and Non-defining Relative Clauses",
+              "description": "Explains when to use who, which, that, whose and where, and when commas are needed around a relative clause.",
+              "duration_minutes": 27
+            },
+            {
+              "title": "Reported Speech: Statements and Questions",
+              "description": "Shows how tenses, pronouns, word order and time expressions change when statements and questions are reported.",
+              "duration_minutes": 30
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Choose the correct word to complete the sentence: 'Lalibela is the town ______ the famous rock-hewn churches are found.'",
+              "options": ["which", "whose", "where", "who"],
+              "answer": "C",
+              "explanation": "'Where' introduces a relative clause about a place and means 'in which'. 'Which' would need a preposition ('in which'), 'whose' shows possession and 'who' refers to people.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Which sentence uses a non-defining relative clause correctly?",
+              "options": [
+                "The Obelisk of Aksum, which was returned from Rome, now stands in its original city.",
+                "The Obelisk of Aksum which was returned from Rome now stands in its original city.",
+                "The Obelisk of Aksum, that was returned from Rome, now stands in its original city.",
+                "The Obelisk of Aksum, who was returned from Rome, now stands in its original city."
+              ],
+              "answer": "A",
+              "explanation": "A non-defining relative clause adds extra information about a noun that is already identified, so it is separated by commas and uses 'which' for things. 'That' cannot introduce a non-defining clause, and 'who' is used only for people.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Choose the correct reported form of this question: Selam asked me, 'Have you ever visited Aksum?'",
+              "options": [
+                "Selam asked me had I ever visited Aksum.",
+                "Selam asked me if had I ever visited Aksum.",
+                "Selam asked me if I have ever visited Aksum?",
+                "Selam asked me if I had ever visited Aksum."
+              ],
+              "answer": "D",
+              "explanation": "Reported yes/no questions use 'if' or 'whether', keep statement word order (subject before verb) and end with a full stop. The present perfect 'have visited' also shifts back to the past perfect 'had visited'.",
+              "difficulty": 3
+            },
+            {
+              "stem": "Read the passage and answer the question. 'The Church of St George (Bete Giyorgis) in Lalibela was not built from stones placed one on top of another. Instead, workers cut downwards into solid rock, removing material until the cross-shaped church stood free in a deep pit.' According to the passage, how was the church made?",
+              "options": [
+                "By stacking cut stones on top of one another",
+                "By carving it out of a single mass of solid rock",
+                "By moving an older church from Aksum",
+                "By building it on the foundations of a palace"
+              ],
+              "answer": "B",
+              "explanation": "The passage says the church was not built from stacked stones; instead, workers cut down into solid rock until the church stood free. This means it was carved out of a single mass of rock.",
+              "difficulty": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics",
+      "name": "Physics",
+      "teacher_name": "Mr. Samuel Tesfaye",
+      "chapters": [
+        {
+          "title": "Vectors",
+          "videos": [
+            {
+              "title": "Scalars, Vectors and Vector Representation",
+              "description": "Distinguishes scalar and vector quantities and shows how vectors are represented by arrows, by components and with the unit vectors i and j.",
+              "duration_minutes": 18
+            },
+            {
+              "title": "Vector Addition: Graphical and Component Methods",
+              "description": "Uses the head-to-tail method and resolution into components to find the magnitude and direction of a resultant vector.",
+              "duration_minutes": 32
+            },
+            {
+              "title": "The Scalar (Dot) Product",
+              "description": "Defines the dot product, uses it to find the angle between two vectors, and links it to the work done by a force.",
+              "duration_minutes": 26
+            }
+          ],
+          "questions": [
+            {
+              "stem": "A student walks 3 km east and then 4 km north from her school in Bahir Dar. What is the magnitude of her displacement?",
+              "options": ["1 km", "5 km", "7 km", "25 km"],
+              "answer": "B",
+              "explanation": "The two displacements are perpendicular, so the resultant is √(3² + 4²) = √25 = 5 km. The 7 km is the total distance walked, not the displacement.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A boy pulls a cart with a force of 20 N directed 30° above the horizontal. What are the horizontal and vertical components of the force?",
+              "options": [
+                "Horizontal 10 N, vertical 17.3 N",
+                "Horizontal 20 N, vertical 0 N",
+                "Horizontal 14.1 N, vertical 14.1 N",
+                "Horizontal 17.3 N, vertical 10 N"
+              ],
+              "answer": "D",
+              "explanation": "Horizontal component = F cos 30° = 20 × 0.866 ≈ 17.3 N. Vertical component = F sin 30° = 20 × 0.5 = 10 N.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Given the vectors A = 3i + 4j and B = 2i − j, what is the scalar product A · B?",
+              "options": ["2", "10", "−2", "6i − 4j"],
+              "answer": "A",
+              "explanation": "Multiply matching components and add: A · B = (3)(2) + (4)(−1) = 6 − 4 = 2. The dot product is a scalar, so it cannot be a vector such as 6i − 4j.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Vectors A and B have magnitudes of 6 units and 8 units. If the magnitude of A + B is 10 units, what is the angle between A and B?",
+              "options": ["0°", "60°", "90°", "180°"],
+              "answer": "C",
+              "explanation": "|A + B|² = A² + B² + 2AB cos θ, so 10² = 6² + 8² + 2(6)(8) cos θ. This gives 100 = 100 + 96 cos θ, so cos θ = 0 and θ = 90°.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Dynamics",
+          "videos": [
+            {
+              "title": "Newton's Laws of Motion and Free-Body Diagrams",
+              "description": "Explains inertia, F = ma and action–reaction pairs, and shows how to draw free-body diagrams to solve force problems.",
+              "duration_minutes": 35
+            },
+            {
+              "title": "Friction",
+              "description": "Distinguishes static and kinetic friction, defines the coefficient of friction and solves problems on horizontal surfaces and inclined planes.",
+              "duration_minutes": 30
+            },
+            {
+              "title": "Work, Energy, Impulse and Momentum",
+              "description": "Applies the work–energy theorem, conservation of mechanical energy and conservation of momentum to falling objects and collisions.",
+              "duration_minutes": 44
+            }
+          ],
+          "questions": [
+            {
+              "stem": "A net force of 12 N acts on a 3 kg box. What is the acceleration of the box?",
+              "options": ["36 m/s²", "15 m/s²", "0.25 m/s²", "4 m/s²"],
+              "answer": "D",
+              "explanation": "From Newton's second law, a = F/m = 12 N ÷ 3 kg = 4 m/s².",
+              "difficulty": 1
+            },
+            {
+              "stem": "A 10 kg crate is pushed across a horizontal floor at constant velocity. The coefficient of kinetic friction is 0.3. What horizontal force is being applied? (g = 10 m/s²)",
+              "options": ["30 N", "3 N", "100 N", "70 N"],
+              "answer": "A",
+              "explanation": "At constant velocity the net force is zero, so the applied force equals kinetic friction: f = μₖN = μₖmg = 0.3 × 10 kg × 10 m/s² = 30 N.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A 2 kg trolley moving at 6 m/s collides with a stationary 4 kg trolley and they stick together. What is their common velocity just after the collision?",
+              "options": ["3 m/s", "6 m/s", "2 m/s", "4 m/s"],
+              "answer": "C",
+              "explanation": "Momentum is conserved: (2 kg)(6 m/s) + (4 kg)(0) = (2 kg + 4 kg)v, so v = 12 ÷ 6 = 2 m/s.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A 2 kg block starts from rest and slides down a frictionless ramp from a height of 5 m. It then moves onto a rough horizontal surface where μₖ = 0.25. How far does it slide on the rough surface before stopping? (g = 10 m/s²)",
+              "options": ["1.25 m", "20 m", "5 m", "40 m"],
+              "answer": "B",
+              "explanation": "All the energy gained on the ramp is removed by friction on the rough surface: mgh = μₖmg × d. The mass cancels, so d = h/μₖ = 5 m ÷ 0.25 = 20 m.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "chemistry",
+      "name": "Chemistry",
+      "teacher_name": "Ms. Meron Haile",
+      "chapters": [
+        {
+          "title": "Atomic Structure and Periodic Properties of the Elements",
+          "videos": [
+            {
+              "title": "From Dalton to Rutherford: Development of Atomic Models",
+              "description": "Traces the main atomic models and the key experiments, such as the cathode ray tube and the gold foil experiment, that revealed the electron and the nucleus.",
+              "duration_minutes": 26
+            },
+            {
+              "title": "Quantum Numbers and Electron Configurations",
+              "description": "Explains the four quantum numbers and the shapes of s, p and d orbitals, and writes electron configurations using the Aufbau principle, the Pauli exclusion principle and Hund's rule.",
+              "duration_minutes": 40
+            },
+            {
+              "title": "Periodic Trends in Atomic Properties",
+              "description": "Shows how atomic radius, ionization energy, electron affinity and electronegativity change across periods and down groups, and explains the main exceptions.",
+              "duration_minutes": 31
+            }
+          ],
+          "questions": [
+            {
+              "stem": "How many neutrons are in an atom of chlorine-35? (Atomic number of Cl = 17)",
+              "options": ["17", "35", "18", "52"],
+              "answer": "C",
+              "explanation": "Number of neutrons = mass number − atomic number = 35 − 17 = 18.",
+              "difficulty": 1
+            },
+            {
+              "stem": "What is the ground-state electron configuration of iron (Z = 26)?",
+              "options": [
+                "1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁸",
+                "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 4p⁶",
+                "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d⁷",
+                "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶"
+              ],
+              "answer": "D",
+              "explanation": "Filling orbitals in Aufbau order (1s, 2s, 2p, 3s, 3p, 4s, 3d) with 26 electrons puts 18 in the argon core, 2 in 4s and the remaining 6 in 3d: [Ar] 4s² 3d⁶.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Which set of quantum numbers (n, l, mₗ, mₛ) is NOT allowed for an electron in an atom?",
+              "options": ["(2, 2, 1, +½)", "(2, 1, 0, +½)", "(3, 2, −2, −½)", "(4, 0, 0, −½)"],
+              "answer": "A",
+              "explanation": "The azimuthal quantum number l can only take values from 0 to n − 1. For n = 2, l can be 0 or 1, so l = 2 is not allowed; the other sets all obey the rules.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Which of the following correctly ranks the first ionization energies of Mg, Al and Si?",
+              "options": ["Mg < Al < Si", "Al < Mg < Si", "Si < Al < Mg", "Al < Si < Mg"],
+              "answer": "B",
+              "explanation": "Ionization energy generally increases across Period 3, but Al is lower than Mg because its outer electron is in a higher-energy 3p orbital shielded by the 3s electrons. The actual values are Al (578 kJ/mol) < Mg (738 kJ/mol) < Si (787 kJ/mol).",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Chemical Bonding",
+          "videos": [
+            {
+              "title": "Ionic, Covalent and Metallic Bonding",
+              "description": "Compares how ionic, covalent and metallic bonds form, links bond type to electronegativity difference, and relates each type of bonding to the properties of substances.",
+              "duration_minutes": 29
+            },
+            {
+              "title": "Lewis Structures, Formal Charge and VSEPR Theory",
+              "description": "Draws Lewis structures, calculates formal charges and uses VSEPR theory to predict molecular shapes such as linear, trigonal planar, tetrahedral, trigonal pyramidal and bent.",
+              "duration_minutes": 41
+            },
+            {
+              "title": "Hybridization and Intermolecular Forces",
+              "description": "Explains sp, sp² and sp³ hybridization, and how London forces, dipole–dipole forces and hydrogen bonds affect boiling points.",
+              "duration_minutes": 37
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which of the following compounds contains ionic bonds?",
+              "options": ["NaCl", "CO₂", "CH₄", "H₂O"],
+              "answer": "A",
+              "explanation": "NaCl forms from a metal and a non-metal with a large electronegativity difference, so electrons are transferred to form Na⁺ and Cl⁻ ions. CO₂, CH₄ and H₂O are covalent molecules made only of non-metals.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Using VSEPR theory, what is the molecular shape of ammonia (NH₃)?",
+              "options": ["Trigonal planar", "Trigonal pyramidal", "Tetrahedral", "Bent"],
+              "answer": "B",
+              "explanation": "Nitrogen has three bonding pairs and one lone pair, giving four electron domains arranged tetrahedrally. The shape describes only the positions of the atoms, so NH₃ is trigonal pyramidal with bond angles of about 107°.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Water (H₂O) boils at 100 °C, while hydrogen sulfide (H₂S), which has a larger molar mass, boils at about −60 °C. What best explains this difference?",
+              "options": [
+                "The O–H covalent bonds break when water boils",
+                "H₂S molecules are non-polar",
+                "London forces are stronger in water than in H₂S",
+                "Water molecules are held together by hydrogen bonds"
+              ],
+              "answer": "D",
+              "explanation": "Oxygen is small and highly electronegative, so water molecules form strong hydrogen bonds with each other that need much more energy to overcome. H₂S does not form significant hydrogen bonds, and London forces are actually stronger in the larger H₂S molecule; boiling separates molecules without breaking covalent bonds.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In the Lewis structure of carbon monoxide, C≡O, each atom has one lone pair. What are the formal charges on carbon and oxygen?",
+              "options": ["C: 0, O: 0", "C: +1, O: −1", "C: −1, O: +1", "C: −2, O: +2"],
+              "answer": "C",
+              "explanation": "Formal charge = valence electrons − non-bonding electrons − ½(bonding electrons). For C: 4 − 2 − ½(6) = −1; for O: 6 − 2 − ½(6) = +1.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "biology",
+      "name": "Biology",
+      "teacher_name": "Mr. Yonas Girma",
+      "chapters": [
+        {
+          "title": "Enzymes",
+          "videos": [
+            {
+              "title": "Enzymes as Biological Catalysts",
+              "description": "Introduces enzymes as protein catalysts, describes their active sites, and explains how they lower the activation energy of reactions.",
+              "duration_minutes": 21
+            },
+            {
+              "title": "Models of Enzyme Action: Lock-and-Key and Induced Fit",
+              "description": "Compares the lock-and-key and induced-fit models and explains how the enzyme–substrate complex forms and breaks down.",
+              "duration_minutes": 24
+            },
+            {
+              "title": "Factors Affecting Enzyme Activity and Inhibition",
+              "description": "Investigates the effects of temperature, pH and substrate concentration on reaction rate, and compares competitive and non-competitive inhibition.",
+              "duration_minutes": 33
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Salivary amylase begins digesting the starch in a mouthful of injera. Like all enzymes, it speeds up the reaction by:",
+              "options": [
+                "increasing the activation energy",
+                "lowering the activation energy",
+                "raising the temperature of the mouth",
+                "being used up in the reaction"
+              ],
+              "answer": "B",
+              "explanation": "Enzymes provide an alternative reaction pathway with a lower activation energy, so more molecules can react at body temperature. They are not used up and do not raise the temperature.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Pepsin works best in the stomach at about pH 2. What happens to its activity if it is placed in a solution of pH 8?",
+              "options": [
+                "Its activity increases because more H⁺ ions are available",
+                "Its activity stays the same because pH does not affect enzymes",
+                "Its activity falls sharply because the active site changes shape",
+                "It changes into a different enzyme that works at pH 8"
+              ],
+              "answer": "C",
+              "explanation": "Each enzyme has an optimum pH. At pH 8, far from pepsin's optimum, changes to ionic and hydrogen bonds alter the shape of the active site, so the substrate no longer fits well and activity falls sharply.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In competitive inhibition, the inhibitor:",
+              "options": [
+                "resembles the substrate and competes with it for the active site",
+                "binds to a site other than the active site and changes the enzyme's shape",
+                "permanently destroys the enzyme by heating it",
+                "increases the maximum rate of the reaction"
+              ],
+              "answer": "A",
+              "explanation": "A competitive inhibitor has a shape similar to the substrate and occupies the active site, so its effect can be overcome by adding more substrate. Binding at another site and changing the enzyme's shape describes non-competitive inhibition.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In an experiment, the rate of an enzyme-catalysed reaction rises as substrate concentration increases, but then levels off even when more substrate is added. What is the best explanation?",
+              "options": [
+                "The enzyme has been denatured by the substrate",
+                "The substrate has started to act as an inhibitor",
+                "The temperature of the mixture has dropped",
+                "All active sites are occupied, so the enzyme is working at its maximum rate"
+              ],
+              "answer": "D",
+              "explanation": "At high substrate concentration every active site is occupied (the enzyme is saturated), so extra substrate cannot raise the rate. The amount of enzyme has become the limiting factor.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Genetics",
+          "videos": [
+            {
+              "title": "Mendel's Laws of Inheritance",
+              "description": "Explains Mendel's pea plant experiments, dominant and recessive alleles, and the laws of segregation and independent assortment.",
+              "duration_minutes": 30
+            },
+            {
+              "title": "Monohybrid and Dihybrid Crosses",
+              "description": "Uses Punnett squares to work through monohybrid, dihybrid and test crosses and to predict genotype and phenotype ratios.",
+              "duration_minutes": 38
+            },
+            {
+              "title": "DNA, Genes and Chromosomes",
+              "description": "Describes the double-helix structure of DNA and complementary base pairing, and explains how genes on chromosomes carry hereditary information.",
+              "duration_minutes": 27
+            }
+          ],
+          "questions": [
+            {
+              "stem": "In pea plants, tall (T) is dominant over short (t). If two heterozygous tall plants (Tt × Tt) are crossed, what fraction of the offspring is expected to be short?",
+              "options": ["1/2", "3/4", "1/4", "0"],
+              "answer": "C",
+              "explanation": "Tt × Tt gives TT : Tt : tt in the ratio 1 : 2 : 1. Only tt plants are short, so 1/4 of the offspring are expected to be short.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A sample of double-stranded DNA contains 30% adenine. What percentage of its bases is guanine?",
+              "options": ["20%", "30%", "40%", "70%"],
+              "answer": "A",
+              "explanation": "By Chargaff's rule A = T, so T is also 30% and A + T = 60%. The remaining 40% is shared equally by G and C, so G = 20%.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In guinea pigs, black fur (B) is dominant over white fur (b). A black guinea pig is crossed with a white one, and about half of the offspring are white. What is the genotype of the black parent?",
+              "options": ["BB", "bb", "Cannot be determined", "Bb"],
+              "answer": "D",
+              "explanation": "White offspring (bb) must receive a b allele from each parent, so the black parent must carry b and be Bb. The cross Bb × bb gives 1 black (Bb) : 1 white (bb), which matches the result.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In the cross AaBb × AaBb, where the two genes assort independently, what proportion of the offspring is expected to have the genotype AaBb?",
+              "options": ["1/16", "1/4", "9/16", "3/16"],
+              "answer": "B",
+              "explanation": "Treat each gene separately: Aa × Aa gives Aa with probability 1/2, and Bb × Bb gives Bb with probability 1/2. So P(AaBb) = 1/2 × 1/2 = 1/4, i.e. 4 of the 16 boxes in the Punnett square.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

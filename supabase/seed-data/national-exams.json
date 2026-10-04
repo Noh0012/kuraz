@@ -1,0 +1,478 @@
+{
+  "papers": [
+    {
+      "subject_key": "math",
+      "exam_year": 2016,
+      "year_label": "2016 E.C.",
+      "title": "Mathematics National Exam 2016 E.C. (Sample)",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "stem": "What is the value of lim (x→3) (x² − 9)/(x − 3)?",
+          "options": ["0", "3", "6", "The limit does not exist"],
+          "answer": "C",
+          "explanation": "For x ≠ 3, (x² − 9)/(x − 3) = (x − 3)(x + 3)/(x − 3) = x + 3. Hence the limit is 3 + 3 = 6.",
+          "difficulty": 1
+        },
+        {
+          "stem": "What is the local minimum value of the function f(x) = x³ − 6x² + 9x + 1?",
+          "options": ["5", "1", "−1", "3"],
+          "answer": "B",
+          "explanation": "f′(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), so the critical points are x = 1 and x = 3. Since f″(x) = 6x − 12 and f″(3) = 6 > 0, the local minimum occurs at x = 3, where f(3) = 27 − 54 + 27 + 1 = 1.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What is the value of the definite integral ∫₀² (3x² + 2x) dx?",
+          "options": ["12", "8", "10", "14"],
+          "answer": "A",
+          "explanation": "An antiderivative of 3x² + 2x is x³ + x². Therefore ∫₀² (3x² + 2x) dx = (2³ + 2²) − (0 + 0) = 8 + 4 = 12.",
+          "difficulty": 1
+        },
+        {
+          "stem": "What is the solution set of the equation log₂ x + log₂ (x − 2) = 3?",
+          "options": ["{−2, 4}", "{−2}", "{8}", "{4}"],
+          "answer": "D",
+          "explanation": "log₂ x + log₂ (x − 2) = log₂ [x(x − 2)] = 3, so x² − 2x = 2³ = 8, i.e. (x − 4)(x + 2) = 0. The logarithms are defined only for x > 2, so x = 4 is the only solution.",
+          "difficulty": 2
+        },
+        {
+          "stem": "The third term of a geometric sequence is 12 and its sixth term is 96. What is the first term of the sequence?",
+          "options": ["2", "4", "3", "6"],
+          "answer": "C",
+          "explanation": "a₆/a₃ = r³ = 96/12 = 8, so r = 2. Then a₃ = a₁r² gives 12 = 4a₁, so a₁ = 3.",
+          "difficulty": 2
+        },
+        {
+          "stem": "If sin θ = 3/5 and θ lies in the second quadrant, what is the value of tan θ?",
+          "options": ["3/4", "−3/4", "−4/3", "4/3"],
+          "answer": "B",
+          "explanation": "cos²θ = 1 − sin²θ = 1 − 9/25 = 16/25, and cosine is negative in the second quadrant, so cos θ = −4/5. Hence tan θ = sin θ/cos θ = (3/5)/(−4/5) = −3/4.",
+          "difficulty": 1
+        },
+        {
+          "stem": "For what value of k are the vectors a = (2, −1, 3) and b = (1, 4, k) perpendicular?",
+          "options": ["−2/3", "3/2", "2", "2/3"],
+          "answer": "D",
+          "explanation": "Perpendicular vectors have a zero dot product: a · b = 2(1) + (−1)(4) + 3k = −2 + 3k = 0. Therefore k = 2/3.",
+          "difficulty": 1
+        },
+        {
+          "stem": "A bag contains 5 red balls and 3 blue balls. Two balls are drawn at random, one after the other, without replacement. What is the probability that both balls are red?",
+          "options": ["25/64", "5/14", "5/8", "15/56"],
+          "answer": "B",
+          "explanation": "P(first ball red) = 5/8 and, with one red ball removed, P(second ball red) = 4/7. So P(both red) = (5/8) × (4/7) = 20/56 = 5/14.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What are the centre and the radius of the circle x² + y² − 6x + 4y − 12 = 0?",
+          "options": ["Centre (−3, 2), radius 5", "Centre (3, −2), radius 25", "Centre (3, −2), radius 5", "Centre (−3, 2), radius √12"],
+          "answer": "C",
+          "explanation": "Completing the squares: (x² − 6x + 9) + (y² + 4y + 4) = 12 + 9 + 4, so (x − 3)² + (y + 2)² = 25. The centre is (3, −2) and the radius is √25 = 5.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What is the area of the region enclosed by the curves y = x² and y = 2x?",
+          "options": ["4/3 square units", "8/3 square units", "2 square units", "16/3 square units"],
+          "answer": "A",
+          "explanation": "The curves meet where x² = 2x, i.e. at x = 0 and x = 2, and 2x ≥ x² between them. Area = ∫₀² (2x − x²) dx = [x² − x³/3] from 0 to 2 = 4 − 8/3 = 4/3 square units.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "subject_key": "physics",
+      "exam_year": 2016,
+      "year_label": "2016 E.C.",
+      "title": "Physics National Exam 2016 E.C. (Sample)",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "stem": "Which one of the following gives the dimensions of power?",
+          "options": ["M L² T⁻²", "M L T⁻²", "M L² T⁻¹", "M L² T⁻³"],
+          "answer": "D",
+          "explanation": "Power = work/time. Work = force × distance has dimensions (M L T⁻²)(L) = M L² T⁻², so power has dimensions M L² T⁻² ÷ T = M L² T⁻³.",
+          "difficulty": 1
+        },
+        {
+          "stem": "A projectile is launched from level ground with a speed of 40 m/s at 30° above the horizontal. What is its horizontal range? (Take g = 10 m/s² and neglect air resistance.)",
+          "options": ["80 m", "80√3 m", "160 m", "40√3 m"],
+          "answer": "B",
+          "explanation": "R = v² sin 2θ / g = (40)² × sin 60° / 10 = 160 × (√3/2) = 80√3 m ≈ 139 m.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Two blocks of masses 2 kg and 3 kg are in contact on a frictionless horizontal surface. A horizontal force of 20 N is applied to the 2 kg block so that it pushes the 3 kg block. What force does the 2 kg block exert on the 3 kg block?",
+          "options": ["8 N", "20 N", "12 N", "4 N"],
+          "answer": "C",
+          "explanation": "Both blocks have the same acceleration: a = F/(m₁ + m₂) = 20/5 = 4 m/s². The only horizontal force on the 3 kg block is the contact force, so F = ma = 3 × 4 = 12 N.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A 4 kg trolley moving at 6 m/s collides with a stationary 2 kg trolley, and the two stick together. How much kinetic energy is lost in the collision?",
+          "options": ["24 J", "48 J", "72 J", "0 J"],
+          "answer": "A",
+          "explanation": "Momentum is conserved: 4 × 6 = (4 + 2)v, so v = 4 m/s. KE before = ½ × 4 × 6² = 72 J and KE after = ½ × 6 × 4² = 48 J, so 72 − 48 = 24 J is lost.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A 0.5 kg mass attached to a spring of force constant 200 N/m oscillates on a frictionless horizontal surface. What is the period of the oscillation?",
+          "options": ["0.05π s", "10π s", "0.1π s", "0.2π s"],
+          "answer": "C",
+          "explanation": "T = 2π√(m/k) = 2π√(0.5/200) = 2π√0.0025 = 2π × 0.05 = 0.1π s ≈ 0.31 s.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A fixed mass of an ideal gas at 27 °C is heated at constant pressure until its volume doubles. What is the final temperature of the gas?",
+          "options": ["54 °C", "600 °C", "150 °C", "327 °C"],
+          "answer": "D",
+          "explanation": "At constant pressure V/T is constant, with T in kelvin. T₁ = 27 + 273 = 300 K, so doubling the volume gives T₂ = 600 K = 600 − 273 = 327 °C.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A 4 Ω resistor is connected in series with a parallel combination of a 6 Ω resistor and a 3 Ω resistor. The circuit is connected to a 12 V battery of negligible internal resistance. What is the current through the 6 Ω resistor?",
+          "options": ["2/3 A", "4/3 A", "2 A", "1 A"],
+          "answer": "A",
+          "explanation": "The parallel pair has R = (6 × 3)/(6 + 3) = 2 Ω, so the total resistance is 4 + 2 = 6 Ω and the circuit current is 12/6 = 2 A. The voltage across the parallel pair is 2 A × 2 Ω = 4 V, so the current in the 6 Ω resistor is 4/6 = 2/3 A.",
+          "difficulty": 3
+        },
+        {
+          "stem": "The magnetic flux through each turn of a 200-turn coil decreases uniformly from 0.05 Wb to 0.01 Wb in 0.2 s. What is the magnitude of the average emf induced in the coil?",
+          "options": ["0.2 V", "4 V", "40 V", "400 V"],
+          "answer": "C",
+          "explanation": "By Faraday's law, ε = N ΔΦ/Δt = 200 × (0.05 − 0.01)/0.2 = 200 × 0.2 = 40 V.",
+          "difficulty": 2
+        },
+        {
+          "stem": "An object is placed 30 cm in front of a converging (convex) lens of focal length 10 cm. Where is the image formed, and what is its nature?",
+          "options": ["15 cm from the lens; virtual and upright", "15 cm from the lens; real and inverted", "7.5 cm from the lens; real and inverted", "30 cm from the lens; real and upright"],
+          "answer": "B",
+          "explanation": "Using 1/f = 1/u + 1/v (real-is-positive): 1/v = 1/10 − 1/30 = 2/30, so v = +15 cm on the far side of the lens. A positive image distance means the image is real and inverted (and diminished, since m = 15/30 = 0.5).",
+          "difficulty": 2
+        },
+        {
+          "stem": "Photons of energy 5.0 eV fall on a metal surface whose work function is 2.0 eV. What is the stopping potential for the emitted photoelectrons?",
+          "options": ["2.0 V", "5.0 V", "7.0 V", "3.0 V"],
+          "answer": "D",
+          "explanation": "Einstein's photoelectric equation gives KEmax = hf − φ = 5.0 eV − 2.0 eV = 3.0 eV. The stopping potential V₀ satisfies eV₀ = KEmax, so V₀ = 3.0 V.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "subject_key": "biology",
+      "exam_year": 2016,
+      "year_label": "2016 E.C.",
+      "title": "Biology National Exam 2016 E.C. (Sample)",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "stem": "Which organelle would you expect to be especially well developed in pancreatic cells that secrete large amounts of digestive enzymes?",
+          "options": ["Smooth endoplasmic reticulum", "Rough endoplasmic reticulum", "Lysosome", "Central vacuole"],
+          "answer": "B",
+          "explanation": "Digestive enzymes are proteins, and proteins for export are made by ribosomes attached to the rough endoplasmic reticulum. Cells that secrete a lot of protein therefore have an extensive rough ER.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which one of the following statements about enzymes is correct?",
+          "options": ["They are used up in the reactions they catalyse.", "They shift the equilibrium position of a reversible reaction.", "Their activity increases without limit as temperature rises.", "They lower the activation energy of the reactions they catalyse."],
+          "answer": "D",
+          "explanation": "Enzymes are biological catalysts: they speed up reactions by lowering the activation energy and are not consumed. They do not change the equilibrium position, and they are denatured at high temperatures, so activity falls above the optimum.",
+          "difficulty": 1
+        },
+        {
+          "stem": "During which stage does crossing over between non-sister chromatids of homologous chromosomes take place?",
+          "options": ["Prophase I of meiosis", "Metaphase II of meiosis", "Anaphase of mitosis", "Telophase II of meiosis"],
+          "answer": "A",
+          "explanation": "In prophase I of meiosis, homologous chromosomes pair up (synapsis) and non-sister chromatids exchange segments at chiasmata. This crossing over produces new combinations of alleles.",
+          "difficulty": 1
+        },
+        {
+          "stem": "In pea plants, tall (T) is dominant over dwarf (t), and round seed (R) is dominant over wrinkled seed (r). If two plants with the genotype TtRr are crossed, what fraction of the offspring is expected to be tall with wrinkled seeds?",
+          "options": ["9/16", "1/16", "3/16", "1/4"],
+          "answer": "C",
+          "explanation": "The two genes assort independently. From Tt × Tt, P(tall) = 3/4, and from Rr × Rr, P(wrinkled) = 1/4, so P(tall and wrinkled) = 3/4 × 1/4 = 3/16.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A segment of the template strand of a DNA molecule has the base sequence 3′-TAC GGA TTC-5′. What is the sequence of the mRNA transcribed from this segment?",
+          "options": ["5′-UAC GGA UUC-3′", "5′-ATG CCT AAG-3′", "5′-GAA UCC GUA-3′", "5′-AUG CCU AAG-3′"],
+          "answer": "D",
+          "explanation": "mRNA is complementary and antiparallel to the template strand, and it contains uracil (U) instead of thymine to pair with adenine. So 3′-TAC GGA TTC-5′ is transcribed as 5′-AUG CCU AAG-3′.",
+          "difficulty": 3
+        },
+        {
+          "stem": "During photosynthesis, the oxygen gas released by green plants comes from which substance?",
+          "options": ["Carbon dioxide", "Water", "Glucose", "Ribulose bisphosphate (RuBP)"],
+          "answer": "B",
+          "explanation": "In the light-dependent reactions, water is split (photolysis) to replace the electrons lost by chlorophyll: 2H₂O → 4H⁺ + 4e⁻ + O₂. The oxygen released therefore comes from water, not from CO₂.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Antidiuretic hormone (ADH) increases the reabsorption of water in the kidney. On which part of the nephron does ADH mainly act?",
+          "options": ["Glomerulus", "Bowman's capsule", "Collecting duct", "Proximal convoluted tubule"],
+          "answer": "C",
+          "explanation": "ADH, released from the posterior pituitary, makes the walls of the collecting duct (and distal tubule) more permeable to water. More water is reabsorbed, so a smaller volume of more concentrated urine is produced.",
+          "difficulty": 2
+        },
+        {
+          "stem": "In a grassland food chain, the producers fix 10,000 kJ of energy. If about 10% of the energy is passed from one trophic level to the next, how much energy reaches the tertiary consumers?",
+          "options": ["1,000 kJ", "100 kJ", "1 kJ", "10 kJ"],
+          "answer": "D",
+          "explanation": "Producers → primary consumers → secondary consumers → tertiary consumers: 10,000 kJ → 1,000 kJ → 100 kJ → 10 kJ. Only about 10% of the energy is passed on at each step.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which one of the following pairs are homologous structures?",
+          "options": ["The wing of a bird and the wing of a butterfly", "The wing of a bat and the arm of a human", "The fin of a shark and the flipper of a dolphin", "The eye of an octopus and the eye of a human"],
+          "answer": "B",
+          "explanation": "Homologous structures share the same basic structure and evolutionary origin even if their functions differ; the bat wing and the human arm are both built on the pentadactyl limb plan. The other pairs are analogous structures, which have similar functions but evolved independently.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A child is given a measles vaccine and later becomes immune to measles. What type of immunity is this?",
+          "options": ["Artificially acquired active immunity", "Naturally acquired active immunity", "Naturally acquired passive immunity", "Artificially acquired passive immunity"],
+          "answer": "A",
+          "explanation": "The vaccine contains weakened or killed antigens, so the child's own immune system makes antibodies and memory cells (active immunity). Because the antigen was given deliberately rather than by catching the disease, the immunity is artificially acquired.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "subject_key": "math",
+      "exam_year": 2015,
+      "year_label": "2015 E.C.",
+      "title": "Mathematics National Exam 2015 E.C. (Sample)",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "stem": "What is the solution set of the inequality |2x − 3| < 5?",
+          "options": ["{x : x < −1 or x > 4}", "{x : −4 < x < 1}", "{x : −1 < x < 4}", "{x : 1 < x < 4}"],
+          "answer": "C",
+          "explanation": "|2x − 3| < 5 means −5 < 2x − 3 < 5. Adding 3 gives −2 < 2x < 8, and dividing by 2 gives −1 < x < 4.",
+          "difficulty": 1
+        },
+        {
+          "stem": "What is the solution of the equation 4ˣ⁺¹ = 8ˣ⁻¹?",
+          "options": ["x = −5", "x = 5", "x = 1", "x = 7"],
+          "answer": "B",
+          "explanation": "Write both sides as powers of 2: 4ˣ⁺¹ = (2²)ˣ⁺¹ = 2²ˣ⁺² and 8ˣ⁻¹ = (2³)ˣ⁻¹ = 2³ˣ⁻³. Equating the exponents, 2x + 2 = 3x − 3, so x = 5.",
+          "difficulty": 1
+        },
+        {
+          "stem": "When the polynomial p(x) = x³ − 2x² + kx + 6 is divided by (x − 2), the remainder is 10. What is the value of k?",
+          "options": ["2", "−2", "1", "4"],
+          "answer": "A",
+          "explanation": "By the Remainder Theorem, the remainder is p(2) = 8 − 8 + 2k + 6 = 2k + 6. Setting 2k + 6 = 10 gives k = 2.",
+          "difficulty": 1
+        },
+        {
+          "stem": "For what value of k does the system of equations 2x + 3y = 5 and 4x + ky = 7 have no solution?",
+          "options": ["3", "−6", "12", "6"],
+          "answer": "D",
+          "explanation": "The system has no unique solution when the determinant of the coefficients is zero: 2k − 3(4) = 0, so k = 6. With k = 6 the equations become 4x + 6y = 10 and 4x + 6y = 7, which contradict each other, so there is no solution.",
+          "difficulty": 2
+        },
+        {
+          "stem": "If z = 1 + i, where i² = −1, what is the value of z⁸?",
+          "options": ["16i", "−16", "16", "8"],
+          "answer": "C",
+          "explanation": "z² = (1 + i)² = 1 + 2i + i² = 2i. Then z⁴ = (2i)² = −4 and z⁸ = (−4)² = 16.",
+          "difficulty": 2
+        },
+        {
+          "stem": "How many terms of the arithmetic sequence 3, 7, 11, 15, … must be added to give a sum of 820?",
+          "options": ["18", "20", "22", "41"],
+          "answer": "B",
+          "explanation": "Here a = 3 and d = 4, so Sₙ = (n/2)[2(3) + (n − 1)(4)] = n(2n + 1). Setting n(2n + 1) = 820 gives 2n² + n − 820 = 0, i.e. (n − 20)(2n + 41) = 0, so n = 20.",
+          "difficulty": 3
+        },
+        {
+          "stem": "A committee of 3 people is to be chosen from 5 men and 4 women. In how many ways can the committee be formed if it must contain exactly 2 women?",
+          "options": ["60", "84", "20", "30"],
+          "answer": "D",
+          "explanation": "Choose 2 of the 4 women in C(4, 2) = 6 ways and 1 of the 5 men in C(5, 1) = 5 ways. By the multiplication principle there are 6 × 5 = 30 possible committees.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What is the variance of the data set 2, 4, 6, 8, 10?",
+          "options": ["8", "4", "6", "2√2"],
+          "answer": "A",
+          "explanation": "The mean is 30/5 = 6, and the squared deviations from the mean are 16, 4, 0, 4 and 16, which add up to 40. The variance is 40/5 = 8 (the standard deviation would be √8 = 2√2).",
+          "difficulty": 2
+        },
+        {
+          "stem": "A function is defined by f(x) = x² + k for x < 1 and f(x) = 3x − 1 for x ≥ 1. For what value of k is f continuous at x = 1?",
+          "options": ["0", "1", "2", "3"],
+          "answer": "B",
+          "explanation": "For continuity at x = 1, the left-hand limit must equal f(1): lim (x→1⁻) (x² + k) = 1 + k and f(1) = 3(1) − 1 = 2. So 1 + k = 2, which gives k = 1.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What is the equation of the tangent line to the curve y = x² − 3x at the point where x = 1?",
+          "options": ["y = x − 3", "y = −x + 1", "y = −x − 1", "y = −2x"],
+          "answer": "C",
+          "explanation": "At x = 1, y = 1 − 3 = −2, and the slope is dy/dx = 2x − 3 = 2(1) − 3 = −1. The tangent line is y − (−2) = −1(x − 1), i.e. y = −x − 1.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "subject_key": "chemistry",
+      "exam_year": 2015,
+      "year_label": "2015 E.C.",
+      "title": "Chemistry National Exam 2015 E.C. (Sample)",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "stem": "How many protons, neutrons and electrons are present in the ion ⁵⁶Fe³⁺? (Atomic number of Fe = 26)",
+          "options": ["26 protons, 30 neutrons, 29 electrons", "26 protons, 30 neutrons, 23 electrons", "23 protons, 30 neutrons, 26 electrons", "26 protons, 56 neutrons, 23 electrons"],
+          "answer": "B",
+          "explanation": "The atomic number gives 26 protons, and neutrons = mass number − atomic number = 56 − 26 = 30. A 3+ ion has lost 3 electrons, so it has 26 − 3 = 23 electrons.",
+          "difficulty": 1
+        },
+        {
+          "stem": "What is the ground-state electron configuration of chromium (Z = 24)?",
+          "options": ["[Ar] 3d⁴ 4s²", "[Ar] 3d⁶", "[Ar] 3d⁵ 4s¹", "[Ar] 4s² 4p⁴"],
+          "answer": "C",
+          "explanation": "Chromium is an exception to the simple filling order because a half-filled 3d subshell is especially stable, so one 4s electron moves into 3d. Its configuration is therefore [Ar] 3d⁵ 4s¹ rather than [Ar] 3d⁴ 4s².",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which one of the following molecules is nonpolar even though it contains polar covalent bonds?",
+          "options": ["H₂O", "NH₃", "HCl", "CCl₄"],
+          "answer": "D",
+          "explanation": "Each C–Cl bond in CCl₄ is polar, but the four bonds point symmetrically to the corners of a tetrahedron, so the bond dipoles cancel and there is no net dipole moment. H₂O (bent), NH₃ (trigonal pyramidal) and HCl all have a net dipole.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Methane burns according to the equation CH₄ + 2O₂ → CO₂ + 2H₂O. What mass of CO₂ is formed when 8.0 g of CH₄ reacts with 16.0 g of O₂? (C = 12, H = 1, O = 16)",
+          "options": ["11 g", "22 g", "44 g", "5.5 g"],
+          "answer": "A",
+          "explanation": "n(CH₄) = 8.0/16 = 0.50 mol and n(O₂) = 16.0/32 = 0.50 mol; since 0.50 mol CH₄ would need 1.0 mol O₂, oxygen is the limiting reactant. From the 2 : 1 ratio of O₂ to CO₂, 0.50 mol O₂ gives 0.25 mol CO₂ = 0.25 × 44 = 11 g.",
+          "difficulty": 3
+        },
+        {
+          "stem": "A sample of gas occupies 2.0 L at 1.0 atm and 27 °C. What volume will it occupy at 2.0 atm and 327 °C?",
+          "options": ["1.0 L", "4.0 L", "8.0 L", "2.0 L"],
+          "answer": "D",
+          "explanation": "Use P₁V₁/T₁ = P₂V₂/T₂ with temperatures in kelvin (300 K and 600 K): V₂ = 2.0 L × (1.0/2.0) × (600/300) = 2.0 L. Doubling the pressure halves the volume, but doubling the absolute temperature doubles it again.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What is the pH of a 0.010 M NaOH solution at 25 °C?",
+          "options": ["2", "12", "10", "7"],
+          "answer": "B",
+          "explanation": "NaOH is a strong base, so [OH⁻] = 0.010 M = 1.0 × 10⁻² M and pOH = 2. At 25 °C, pH = 14 − pOH = 14 − 2 = 12.",
+          "difficulty": 2
+        },
+        {
+          "stem": "The rate law for a reaction is rate = k[A]²[B]. If the concentration of A is doubled and the concentration of B is halved, what happens to the rate of the reaction?",
+          "options": ["It stays the same.", "It is halved.", "It doubles.", "It increases four times."],
+          "answer": "C",
+          "explanation": "New rate = k(2[A])²(½[B]) = 4 × ½ × k[A]²[B] = 2 × the original rate. So the rate doubles.",
+          "difficulty": 2
+        },
+        {
+          "stem": "For the equilibrium N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔH = −92 kJ, which one of the following changes shifts the equilibrium position to the right?",
+          "options": ["Removing NH₃ from the mixture as it forms", "Increasing the temperature", "Decreasing the total pressure", "Adding an iron catalyst"],
+          "answer": "A",
+          "explanation": "By Le Chatelier's principle, removing a product makes the system form more NH₃, shifting the equilibrium to the right. Raising the temperature favours the endothermic reverse reaction, lowering the pressure favours the side with more moles of gas (the left), and a catalyst does not shift the equilibrium at all.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Given the standard reduction potentials E°(Zn²⁺/Zn) = −0.76 V and E°(Cu²⁺/Cu) = +0.34 V, what is the standard emf of the galvanic cell Zn | Zn²⁺ || Cu²⁺ | Cu?",
+          "options": ["0.42 V", "−1.10 V", "1.10 V", "−0.42 V"],
+          "answer": "C",
+          "explanation": "Copper, with the higher reduction potential, is the cathode and zinc is the anode. E°cell = E°(cathode) − E°(anode) = 0.34 − (−0.76) = +1.10 V.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Ethanoic acid is warmed with ethanol in the presence of a few drops of concentrated H₂SO₄. What is the main organic product?",
+          "options": ["Ethyl ethanoate", "Diethyl ether", "Ethanal", "Ethene"],
+          "answer": "A",
+          "explanation": "A carboxylic acid and an alcohol undergo esterification, with concentrated H₂SO₄ as the catalyst: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O. The ester formed is ethyl ethanoate (ethyl acetate).",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "subject_key": "english",
+      "exam_year": 2015,
+      "year_label": "2015 E.C.",
+      "title": "English National Exam 2015 E.C. (Sample)",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "stem": "Choose the option that best completes the sentence: By the time we arrived at the station, the train ______.",
+          "options": ["has left", "had left", "leaves", "will have left"],
+          "answer": "B",
+          "explanation": "The train left before another past action (our arrival), so the past perfect 'had left' is needed. 'By the time' followed by the simple past is normally completed with the past perfect.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Choose the option that best completes the sentence: If I ______ enough money last year, I would have bought a laptop.",
+          "options": ["saved", "have saved", "would save", "had saved"],
+          "answer": "D",
+          "explanation": "This is a third conditional about an unreal past situation: if + past perfect, would have + past participle. So the correct form is 'had saved'.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Choose the correct passive form of the sentence: “The workers are building a new bridge across the river.”",
+          "options": ["A new bridge is being built across the river by the workers.", "A new bridge is built across the river by the workers.", "A new bridge was being built across the river by the workers.", "A new bridge has been built across the river by the workers."],
+          "answer": "A",
+          "explanation": "The active sentence is in the present continuous ('are building'). Its passive is formed with is/are + being + past participle, so the correct form is 'is being built'.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Choose the correct reported (indirect) form of the sentence: She said, “I will visit my grandmother tomorrow.”",
+          "options": ["She told that she would visit her grandmother the next day.", "She said that I would visit my grandmother the next day.", "She said that she would visit her grandmother the next day.", "She said that she had visited her grandmother the day before."],
+          "answer": "C",
+          "explanation": "In reported speech after 'said', 'will' becomes 'would', 'I/my' become 'she/her', and 'tomorrow' becomes 'the next day'. 'Told' needs an object (for example, 'told me'), so the first option is incorrect.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Choose the correct question tag: She hardly ever comes to class late, ______?",
+          "options": ["doesn't she", "isn't she", "is she", "does she"],
+          "answer": "D",
+          "explanation": "'Hardly ever' gives the statement a negative meaning, so the tag must be positive. The verb 'comes' is in the simple present, so the auxiliary 'does' is used: 'does she?'",
+          "difficulty": 3
+        },
+        {
+          "stem": "Choose the word closest in meaning to the word in capital letters: The long drought had a DETRIMENTAL effect on the harvest.",
+          "options": ["beneficial", "harmful", "temporary", "minor"],
+          "answer": "B",
+          "explanation": "'Detrimental' means causing harm or damage. A long drought damages crops, so 'harmful' is the closest meaning, while 'beneficial' is its opposite.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Choose the word that best completes the sentence: Almaz studied very hard for the exam; ______, she did not get the score she wanted.",
+          "options": ["therefore", "moreover", "nevertheless", "because"],
+          "answer": "C",
+          "explanation": "The second clause is the opposite of what we would expect from the first, so a contrast connector is needed. 'Nevertheless' (meaning 'in spite of that') fits, whereas 'therefore' shows a result and 'moreover' adds information.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Read the passage and answer the question.\n\nIn many highland areas of Ethiopia, farmers have begun building stone terraces on steep hillsides. Before the terraces were built, heavy rains washed away the fertile topsoil every year, and crop yields kept falling. The terraces slow down the rainwater so that more of it soaks into the ground. As a result, some springs that had dried up have started to flow again, and a number of families now grow vegetables during the dry season. Building terraces requires a great deal of labour, however, so neighbours usually work together, taking turns on each other's land.\n\nAccording to the passage, what was the main problem before the terraces were built?",
+          "options": ["Heavy rains washed away the fertile topsoil.", "Farmers did not have enough labour.", "Vegetables could not be sold at the market.", "Springs flowed too strongly during the dry season."],
+          "answer": "A",
+          "explanation": "The second sentence states that before the terraces were built, heavy rains washed away the fertile topsoil every year and crop yields kept falling. None of the other options is given as the problem.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Read the passage and answer the question.\n\nIn many highland areas of Ethiopia, farmers have begun building stone terraces on steep hillsides. Before the terraces were built, heavy rains washed away the fertile topsoil every year, and crop yields kept falling. The terraces slow down the rainwater so that more of it soaks into the ground. As a result, some springs that had dried up have started to flow again, and a number of families now grow vegetables during the dry season. Building terraces requires a great deal of labour, however, so neighbours usually work together, taking turns on each other's land.\n\nAs used in the passage, the word 'yields' is closest in meaning to:",
+          "options": ["prices", "amounts of crops produced", "plant diseases", "farming tools"],
+          "answer": "B",
+          "explanation": "'Crop yields kept falling' refers to the quantity of crops the land produced. Falling yields mean smaller harvests, which is why the loss of topsoil was a serious problem.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Read the passage and answer the question.\n\nIn many highland areas of Ethiopia, farmers have begun building stone terraces on steep hillsides. Before the terraces were built, heavy rains washed away the fertile topsoil every year, and crop yields kept falling. The terraces slow down the rainwater so that more of it soaks into the ground. As a result, some springs that had dried up have started to flow again, and a number of families now grow vegetables during the dry season. Building terraces requires a great deal of labour, however, so neighbours usually work together, taking turns on each other's land.\n\nWhich one of the following best expresses the main idea of the passage?",
+          "options": ["Rural families prefer growing vegetables to growing grain.", "Terraces cost too much for most farming communities.", "Rainfall in Ethiopia has increased in recent years.", "Building terraces helps farmers save their soil and water."],
+          "answer": "D",
+          "explanation": "The passage explains how terraces stop the loss of topsoil, let more rainwater soak into the ground and bring dried-up springs back to life. The other options are either not stated or contradict the passage.",
+          "difficulty": 2
+        }
+      ]
+    }
+  ]
+}

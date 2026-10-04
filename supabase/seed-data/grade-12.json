@@ -1,0 +1,985 @@
+{
+  "grade": 12,
+  "subjects": [
+    {
+      "key": "math",
+      "name": "Mathematics",
+      "teacher_name": "Mr. Henok Tadesse",
+      "chapters": [
+        {
+          "title": "Sequence and Series",
+          "videos": [
+            {
+              "title": "Arithmetic and Geometric Sequences",
+              "description": "Defines sequences by formula and by recursion, and derives the nth term of arithmetic and geometric sequences with worked examples.",
+              "duration_minutes": 28
+            },
+            {
+              "title": "Sums of Arithmetic and Geometric Series",
+              "description": "Introduces sigma notation and the sum formulas for finite arithmetic and geometric series, applied to savings and population problems.",
+              "duration_minutes": 35
+            },
+            {
+              "title": "Infinite Geometric Series",
+              "description": "Explains when an infinite geometric series converges, finds its sum with S = a/(1 − r), and converts repeating decimals to fractions.",
+              "duration_minutes": 30
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What is the 20th term of the arithmetic sequence 5, 8, 11, 14, …?",
+              "options": ["60", "65", "62", "57"],
+              "answer": "C",
+              "explanation": "Here a₁ = 5 and d = 3, so a₂₀ = a₁ + (20 − 1)d = 5 + 19 × 3 = 62.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Liya saves 50 birr in the first week, 70 birr in the second week and 90 birr in the third week, increasing her savings by 20 birr every week. How much will she have saved in total after 12 weeks?",
+              "options": ["270 birr", "1,920 birr", "1,650 birr", "3,240 birr"],
+              "answer": "B",
+              "explanation": "The weekly savings form an arithmetic sequence with a₁ = 50 and d = 20. S₁₂ = (12/2)[2(50) + (12 − 1)(20)] = 6 × 320 = 1,920 birr.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In a geometric sequence, the second term is 6 and the fifth term is 162. What is the common ratio?",
+              "options": ["3", "2", "9", "27"],
+              "answer": "A",
+              "explanation": "a₅ ÷ a₂ = ar⁴ ÷ ar = r³ = 162 ÷ 6 = 27, so r = 3 (and the first term is 2).",
+              "difficulty": 2
+            },
+            {
+              "stem": "Which fraction is equal to the repeating decimal 0.272727…?",
+              "options": ["27/100", "27/90", "2/7", "3/11"],
+              "answer": "D",
+              "explanation": "0.2727… = 27/100 + 27/10,000 + … is an infinite geometric series with a = 27/100 and r = 1/100. Its sum is (27/100) ÷ (1 − 1/100) = 27/99 = 3/11.",
+              "difficulty": 2
+            },
+            {
+              "stem": "The sum of the first n terms of a sequence is Sₙ = n² + 2n. What is the 10th term of the sequence?",
+              "options": ["19", "23", "21", "120"],
+              "answer": "C",
+              "explanation": "a₁₀ = S₁₀ − S₉ = (10² + 2 × 10) − (9² + 2 × 9) = 120 − 99 = 21. In general aₙ = Sₙ − Sₙ₋₁ = 2n + 1.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Introduction to Calculus",
+          "videos": [
+            {
+              "title": "Limits and Continuity",
+              "description": "Evaluates limits by substitution, factorization and rationalization, finds limits at infinity, and tests whether a function is continuous at a point.",
+              "duration_minutes": 40
+            },
+            {
+              "title": "Derivatives and Their Applications",
+              "description": "Introduces the derivative as the limit of a difference quotient, applies the power, product, quotient and chain rules, and uses derivatives to solve maximum and minimum problems.",
+              "duration_minutes": 50
+            },
+            {
+              "title": "Antiderivatives and Definite Integrals",
+              "description": "Finds antiderivatives of polynomial functions, evaluates definite integrals with the Fundamental Theorem of Calculus, and calculates areas under curves.",
+              "duration_minutes": 45
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Evaluate lim (x → 3) (x² − 9)/(x − 3).",
+              "options": ["0", "6", "3", "Does not exist"],
+              "answer": "B",
+              "explanation": "Direct substitution gives 0/0, so factorize: (x² − 9)/(x − 3) = (x − 3)(x + 3)/(x − 3) = x + 3 for x ≠ 3. The limit is 3 + 3 = 6.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Evaluate lim (x → ∞) (3x² − 5x + 1)/(6x² + 4).",
+              "options": ["1/2", "0", "3", "∞"],
+              "answer": "A",
+              "explanation": "Divide the numerator and denominator by x² to get (3 − 5/x + 1/x²)/(6 + 4/x²). As x → ∞ the terms with x in the denominator tend to 0, so the limit is 3/6 = 1/2.",
+              "difficulty": 2
+            },
+            {
+              "stem": "If f(x) = (2x + 1)³, what is f′(1)?",
+              "options": ["27", "18", "9", "54"],
+              "answer": "D",
+              "explanation": "By the chain rule, f′(x) = 3(2x + 1)² × 2 = 6(2x + 1)². At x = 1, f′(1) = 6 × 3² = 54.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A farmer beside the Awash River has 200 m of fencing to enclose a rectangular field. No fence is needed along the river bank. What is the largest area he can enclose?",
+              "options": ["2,500 m²", "4,800 m²", "5,000 m²", "10,000 m²"],
+              "answer": "C",
+              "explanation": "Let x be each side perpendicular to the river, so the side parallel to it is 200 − 2x and A = x(200 − 2x) = 200x − 2x². A′(x) = 200 − 4x = 0 gives x = 50 m, so A = 50 × 100 = 5,000 m² (A″ = −4 < 0 confirms a maximum).",
+              "difficulty": 3
+            },
+            {
+              "stem": "What is the area of the region bounded by the curve y = 4 − x² and the x-axis?",
+              "options": ["16/3", "32/3", "8", "64/3"],
+              "answer": "B",
+              "explanation": "The curve meets the x-axis at x = −2 and x = 2 and lies above it in between. Area = ∫ (4 − x²) dx from −2 to 2 = [4x − x³/3] from −2 to 2 = (8 − 8/3) − (−8 + 8/3) = 32/3 square units.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Introduction to Linear Programming",
+          "videos": [
+            {
+              "title": "Graphing Systems of Linear Inequalities",
+              "description": "Shows how to graph linear inequalities in two variables and identify the feasible region defined by a system of constraints.",
+              "duration_minutes": 30
+            },
+            {
+              "title": "Formulating Linear Programming Problems",
+              "description": "Translates word problems about production, diet and farming into decision variables, an objective function and constraints.",
+              "duration_minutes": 34
+            },
+            {
+              "title": "Solving LP Problems by the Corner-Point Method",
+              "description": "Finds the corner points of bounded and unbounded feasible regions and evaluates the objective function at each to locate the maximum or minimum.",
+              "duration_minutes": 36
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which point satisfies the inequality 2x + 3y ≤ 12?",
+              "options": ["(3, 3)", "(6, 1)", "(0, 5)", "(2, 2)"],
+              "answer": "D",
+              "explanation": "Substitute each point: (2, 2) gives 2(2) + 3(2) = 10 ≤ 12, so it satisfies the inequality. The other three points each give 15, which is greater than 12.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A small furniture workshop makes chairs and tables. Each chair needs 2 hours of labour and each table needs 5 hours, and at most 40 hours of labour are available per week. If x is the number of chairs and y the number of tables made per week, which inequality represents the labour constraint?",
+              "options": ["5x + 2y ≤ 40", "2x + 5y ≤ 40", "2x + 5y ≥ 40", "x + y ≤ 40"],
+              "answer": "B",
+              "explanation": "Chairs use 2x hours and tables use 5y hours, and together they cannot exceed the 40 hours available, so 2x + 5y ≤ 40.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Maximize Z = 3x + 2y subject to x + y ≤ 4, x + 3y ≤ 6, x ≥ 0 and y ≥ 0. What is the maximum value of Z?",
+              "options": ["12", "11", "4", "18"],
+              "answer": "A",
+              "explanation": "The corner points of the feasible region are (0, 0), (4, 0), (3, 1) and (0, 2), where (3, 1) solves x + y = 4 and x + 3y = 6. Z takes the values 0, 12, 11 and 4 there, so the maximum is Z = 12 at (4, 0).",
+              "difficulty": 2
+            },
+            {
+              "stem": "Minimize C = 2x + 3y subject to x + y ≥ 5, x + 2y ≥ 6, x ≥ 0 and y ≥ 0. What is the minimum value of C?",
+              "options": ["15", "12", "11", "10"],
+              "answer": "C",
+              "explanation": "The feasible region is unbounded with corner points (0, 5), (4, 1) and (6, 0), where (4, 1) solves x + y = 5 and x + 2y = 6. C equals 15, 11 and 12 at these points and only increases further from the origin, so the minimum is C = 11 at (4, 1).",
+              "difficulty": 3
+            },
+            {
+              "stem": "A farmer in Gojjam has 10 hectares of land to plant with teff and maize. Teff needs 3 days of labour per hectare and maize needs 2 days per hectare, and at most 24 labour days are available. The profit is 4,000 birr per hectare of teff and 3,000 birr per hectare of maize. How many hectares of teff should he plant to maximize profit?",
+              "options": ["6 hectares", "8 hectares", "10 hectares", "4 hectares"],
+              "answer": "D",
+              "explanation": "With x hectares of teff and y of maize: x + y ≤ 10, 3x + 2y ≤ 24, x ≥ 0, y ≥ 0. The corner points (0, 0), (8, 0), (4, 6) and (0, 10) give profits of 0, 32,000, 34,000 and 30,000 birr, so he should plant 4 ha of teff (and 6 ha of maize).",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "english",
+      "name": "English",
+      "teacher_name": "Ms. Selamawit Mekonnen",
+      "chapters": [
+        {
+          "title": "Sustainable Development",
+          "videos": [
+            {
+              "title": "Reading for Main Ideas: Community Conservation",
+              "description": "Practises identifying main ideas, supporting details and the writer's purpose in a text about Ethiopian communities balancing conservation and economic growth.",
+              "duration_minutes": 26
+            },
+            {
+              "title": "Vocabulary in Context and Word Forms",
+              "description": "Builds exam vocabulary by working out meanings from context, finding synonyms and antonyms, and choosing the correct word form.",
+              "duration_minutes": 22
+            },
+            {
+              "title": "Comparing and Contrasting Devices and Sentence Fragments",
+              "description": "Uses linkers such as whereas, however, similarly and in contrast to write cohesive paragraphs, and shows how to correct sentence fragments.",
+              "duration_minutes": 30
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Choose the correct form of the word to complete the definition: 'Sustainable development meets the needs of the present without ______ the ability of future generations to meet their own needs.'",
+              "options": ["compromise", "compromising", "compromised", "to compromise"],
+              "answer": "B",
+              "explanation": "After a preposition such as 'without', English uses the gerund (-ing form), so 'without compromising' is correct. This is the well-known Brundtland Commission definition of sustainable development.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Choose the best linking word: 'Fossil fuels are cheap in the short term; ______, they cause serious long-term damage to the environment.'",
+              "options": ["however", "therefore", "similarly", "for example"],
+              "answer": "A",
+              "explanation": "The two clauses present opposing ideas (cheap now, harmful later), so a contrast linker is needed. 'However' shows contrast, whereas 'therefore' shows result, 'similarly' shows comparison and 'for example' introduces an example.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Which of the following is a sentence fragment?",
+              "options": [
+                "Many farmers now use terraces to stop soil erosion.",
+                "The new dam supplies electricity to thousands of homes.",
+                "Recycling reduces waste.",
+                "Because the community planted trees on the hillside."
+              ],
+              "answer": "D",
+              "explanation": "'Because the community planted trees on the hillside' begins with the subordinating conjunction 'because', so it is a dependent clause that cannot stand alone as a complete thought. Each of the other options has a subject and a finite verb and makes complete sense.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Read the passage and answer the question. 'Over the past two decades, communities in parts of the Ethiopian highlands have restored bare hillsides by closing them to livestock and building stone terraces. Within a few years, grass and trees returned, some dried-up springs began to flow again, and nearby farmers harvested more. Yet these gains were not automatic. Where residents had helped plan the work and shared in its benefits, the enclosures were protected; where projects were imposed from outside, fences were soon broken and the land was degraded again.' Which statement best expresses the main idea of the passage?",
+              "options": [
+                "Stone terraces are the only way to increase crop yields.",
+                "Restoring hillsides brings benefits, but lasting success depends on community participation.",
+                "Livestock should be banned from all hillsides in Ethiopia.",
+                "Outside organizations protect land better than local people do."
+              ],
+              "answer": "B",
+              "explanation": "The passage first lists the benefits of restoration and then, after 'Yet', explains that the results lasted only where residents helped plan the work and shared its benefits. The other options overstate the passage or contradict it.",
+              "difficulty": 3
+            },
+            {
+              "stem": "Choose the word OPPOSITE in meaning to 'depleted' in the sentence: 'Years of overuse have depleted the town's underground water supply.'",
+              "options": ["exhausted", "polluted", "replenished", "diverted"],
+              "answer": "C",
+              "explanation": "'Depleted' means used up or greatly reduced, so its opposite is 'replenished' (filled up again). 'Exhausted' is a synonym, while 'polluted' and 'diverted' have unrelated meanings.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "title": "Time Management",
+          "videos": [
+            {
+              "title": "Listening and Reading: Beating Procrastination",
+              "description": "Develops note-taking and reading for detail using texts on why people procrastinate and practical strategies for managing study time.",
+              "duration_minutes": 24
+            },
+            {
+              "title": "Expressing Result and Making Wishes",
+              "description": "Covers so…that, such…that, therefore and as a result, and wish structures for present situations and past regrets.",
+              "duration_minutes": 32
+            },
+            {
+              "title": "Phrasal Verbs and Word Analogies",
+              "description": "Practises common phrasal verbs such as put off, catch up and run out of, and solves analogy items of the type found in the national exam.",
+              "duration_minutes": 25
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Choose the phrasal verb that best completes the sentence: 'Hana kept ______ her assignment until the night before the deadline, so she had to rush.'",
+              "options": ["putting up", "taking after", "putting off", "looking into"],
+              "answer": "C",
+              "explanation": "'Put off' means to postpone, which fits a student who delays her assignment until the last night. 'Put up' means to raise or give someone a place to stay, 'take after' means resemble, and 'look into' means investigate.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Dawit failed his exam because he did not plan his study time. Which sentence correctly expresses his regret about the past?",
+              "options": [
+                "I wish I planned my study time better.",
+                "I wish I would plan my study time better.",
+                "I wish I have planned my study time better.",
+                "I wish I had planned my study time better."
+              ],
+              "answer": "D",
+              "explanation": "A regret about the past is expressed with wish + past perfect: 'I wish I had planned…'. 'I wish I planned' refers to the present, 'I wish I would' is not used for one's own past actions, and 'wish' is not followed by the present perfect.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Choose the correct word: 'It was ______ a busy week that Meron could not finish her project on time.'",
+              "options": ["such", "so", "too", "very"],
+              "answer": "A",
+              "explanation": "'Such' is used before a noun phrase (a busy week), whereas 'so' is used before an adjective or adverb alone (so busy). The pattern such + a + adjective + noun + that expresses a result.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Choose the word that completes the analogy. CLOCK : TIME :: SCALE : ______",
+              "options": ["kilogram", "weight", "balance", "kitchen"],
+              "answer": "B",
+              "explanation": "A clock is an instrument that measures time, so the matching relationship is that a scale measures weight. 'Kilogram' is a unit rather than the quantity measured, and 'balance' is another measuring instrument.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Read the passage and answer the question. 'In one study, students were asked to estimate how long their final-year projects would take. On average they predicted 34 days; in reality they needed 56. Even their worst-case estimates were too optimistic. Psychologists call this the planning fallacy: we imagine how a task will go if everything runs smoothly and ignore the delays we have met before.' Which advice would the writer most likely give a student planning a project?",
+              "options": [
+                "Base your estimate on how long similar tasks actually took in the past.",
+                "Assume that everything will go smoothly so that you stay motivated.",
+                "Avoid making time estimates, since they are always wrong.",
+                "Choose only projects that can be finished in less than 34 days."
+              ],
+              "answer": "A",
+              "explanation": "The passage explains that people underestimate time because they picture an ideal process and ignore past delays. The logical remedy is to base estimates on how long similar tasks really took; assuming everything will go smoothly is exactly the error described.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Evidence on Traffic Accident",
+          "videos": [
+            {
+              "title": "Listening: Retelling an Accident Report",
+              "description": "Practises listening for sequence and key details in a traffic police report and retelling the incident in the correct order.",
+              "duration_minutes": 23
+            },
+            {
+              "title": "Narrative Tenses and the Passive Voice",
+              "description": "Reviews the past simple, past continuous and past perfect for telling stories, and the passive forms used in reports and news.",
+              "duration_minutes": 31
+            },
+            {
+              "title": "Writing a Narrative Essay",
+              "description": "Plans and drafts a narrative essay with a clear opening, events sequenced with time connectors, and a reflective conclusion.",
+              "duration_minutes": 28
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Choose the correct verb forms: 'The minibus ______ along the Addis Ababa–Adama road when one of its tyres ______.'",
+              "options": ["travelled / was bursting", "was travelling / burst", "has travelled / bursts", "travels / had burst"],
+              "answer": "B",
+              "explanation": "The past continuous ('was travelling') describes the longer background action, and the past simple ('burst') describes the short event that interrupted it.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Change the sentence into the passive voice: 'The traffic police questioned the driver after the accident.'",
+              "options": [
+                "The driver has been questioned by the traffic police after the accident.",
+                "The driver questioned the traffic police after the accident.",
+                "The driver was questioned by the traffic police after the accident.",
+                "The driver was questioning by the traffic police after the accident."
+              ],
+              "answer": "C",
+              "explanation": "In the passive, the object of the active sentence (the driver) becomes the subject, and the past simple 'questioned' becomes 'was questioned' (was + past participle). The tense must remain the past simple.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Choose the correct option: 'By the time the ambulance arrived, the injured passengers ______ out of the car by bystanders.'",
+              "options": ["have already been pulled", "had already pulled", "are already pulled", "had already been pulled"],
+              "answer": "D",
+              "explanation": "'By the time' + past simple shows that the action was completed before another past action, so the past perfect is needed. Because the bystanders did the pulling, the passengers receive the action, so the past perfect passive 'had already been pulled' is correct.",
+              "difficulty": 3
+            },
+            {
+              "stem": "Read the passage and answer the question. 'Witnesses said the lorry was overtaking on a bend when it met an oncoming bus. The road was dry, visibility was good, and inspectors found that both vehicles were in sound mechanical condition. Investigators later learned that the lorry driver had been driving for fourteen hours without rest.' Based on the evidence, what was the most likely main cause of the accident?",
+              "options": [
+                "The lorry driver's fatigue and unsafe overtaking",
+                "Poor weather conditions",
+                "Mechanical failure of the vehicles",
+                "Poor visibility on the road"
+              ],
+              "answer": "A",
+              "explanation": "The passage rules out weather, visibility and mechanical faults, but reports fourteen hours of driving without rest and overtaking on a bend. The evidence therefore points to driver fatigue leading to unsafe overtaking.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Put the sentences in the correct order to form a short narrative: (1) An ambulance took her to the hospital. (2) A girl was crossing the road at Mexico Square. (3) Suddenly, a speeding taxi hit her. (4) Fortunately, she recovered within a week.",
+              "options": ["3, 2, 1, 4", "2, 1, 3, 4", "2, 3, 1, 4", "4, 2, 3, 1"],
+              "answer": "C",
+              "explanation": "A narrative follows time order: the background (the girl crossing the road), the main event (the taxi hitting her), the response (the ambulance) and the outcome (her recovery). 'Suddenly' signals the interrupting event and 'Fortunately' introduces the ending.",
+              "difficulty": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics",
+      "name": "Physics",
+      "teacher_name": "Mr. Biruk Assefa",
+      "chapters": [
+        {
+          "title": "Two-Dimensional Motion",
+          "videos": [
+            {
+              "title": "Projectile Motion",
+              "description": "Treats horizontal and vertical motion independently to find the time of flight, maximum height and range of projectiles.",
+              "duration_minutes": 40
+            },
+            {
+              "title": "Uniform Circular Motion and Rotational Dynamics",
+              "description": "Covers angular velocity, centripetal acceleration and force, torque, moment of inertia and conservation of angular momentum.",
+              "duration_minutes": 45
+            },
+            {
+              "title": "Gravitation and Planetary Motion",
+              "description": "Applies Newton's law of universal gravitation and Kepler's laws to planets and satellites, including orbital speed and period.",
+              "duration_minutes": 38
+            }
+          ],
+          "questions": [
+            {
+              "stem": "A stone is thrown horizontally at 15 m/s from the top of a cliff 20 m high. How long does it take to reach the ground? (g = 10 m/s², ignore air resistance)",
+              "options": ["1.3 s", "2 s", "3 s", "4 s"],
+              "answer": "B",
+              "explanation": "The horizontal velocity does not affect the vertical motion, which starts with zero vertical velocity. From h = ½gt²: 20 = ½ × 10 × t², so t² = 4 and t = 2 s.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A ball is kicked from level ground at 20 m/s at an angle of 30° above the horizontal. What is its horizontal range? (g = 10 m/s², ignore air resistance)",
+              "options": ["20 m", "17.3 m", "40 m", "34.6 m"],
+              "answer": "D",
+              "explanation": "R = v₀² sin 2θ / g = (20)² × sin 60° ÷ 10 = 400 × 0.866 ÷ 10 ≈ 34.6 m. A range of 40 m would only be reached at a launch angle of 45°.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A 0.5 kg stone tied to a string moves in a horizontal circle of radius 2 m on a smooth table at a constant speed of 4 m/s. What is the tension in the string?",
+              "options": ["4 N", "1 N", "8 N", "16 N"],
+              "answer": "A",
+              "explanation": "On a smooth horizontal table the tension alone provides the centripetal force: T = mv²/r = 0.5 × 4² ÷ 2 = 8 ÷ 2 = 4 N.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Two satellites orbit the Earth. The orbital radius of satellite Q is 4 times that of satellite P. If the period of P is T, what is the period of Q?",
+              "options": ["2T", "4T", "8T", "16T"],
+              "answer": "C",
+              "explanation": "By Kepler's third law, T² is proportional to r³. If r increases 4 times, T² increases 4³ = 64 times, so the period increases √64 = 8 times and Q's period is 8T.",
+              "difficulty": 3
+            },
+            {
+              "stem": "A student on a freely rotating stool holds two dumbbells at arm's length and spins at 2 rev/s, with a total moment of inertia of 4.0 kg·m². She pulls the dumbbells to her chest, reducing the moment of inertia to 1.6 kg·m². What is her new rate of rotation?",
+              "options": ["0.8 rev/s", "5 rev/s", "3.2 rev/s", "6.4 rev/s"],
+              "answer": "B",
+              "explanation": "With no external torque, angular momentum is conserved: I₁ω₁ = I₂ω₂. So ω₂ = (4.0 × 2) ÷ 1.6 = 5 rev/s; she spins faster because her moment of inertia has decreased.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "title": "Fluid Mechanics",
+          "videos": [
+            {
+              "title": "Pressure in Fluids and Pascal's Principle",
+              "description": "Derives P = ρgh, distinguishes absolute and gauge pressure, and applies Pascal's principle to hydraulic lifts and brakes.",
+              "duration_minutes": 34
+            },
+            {
+              "title": "Archimedes' Principle and Flotation",
+              "description": "Explains buoyant force and why objects float or sink, and shows how to find the density of a solid and the submerged fraction of a floating body.",
+              "duration_minutes": 30
+            },
+            {
+              "title": "Fluid Flow: Continuity and Bernoulli's Equation",
+              "description": "Uses the continuity equation and Bernoulli's equation to analyse flow in pipes, aeroplane lift and safety in high-pressure systems.",
+              "duration_minutes": 39
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What is the pressure due to the water alone at a depth of 5 m in Lake Tana? (ρ = 1000 kg/m³, g = 10 m/s²)",
+              "options": ["50 kPa", "5 kPa", "500 kPa", "0.5 kPa"],
+              "answer": "A",
+              "explanation": "P = ρgh = 1000 kg/m³ × 10 m/s² × 5 m = 50,000 Pa = 50 kPa. This is the gauge pressure; atmospheric pressure would be added to find the absolute pressure.",
+              "difficulty": 1
+            },
+            {
+              "stem": "In a hydraulic lift, the small piston has an area of 0.01 m² and the large piston has an area of 0.5 m². What force must be applied to the small piston to lift a car weighing 15,000 N?",
+              "options": ["750 N", "300 N", "150 N", "3,000 N"],
+              "answer": "B",
+              "explanation": "By Pascal's principle the pressure is the same on both pistons: F₁/A₁ = F₂/A₂. So F₁ = 15,000 N × (0.01 ÷ 0.5) = 300 N.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A block of wood with a density of 600 kg/m³ floats in water (density 1000 kg/m³). What fraction of its volume is below the water surface?",
+              "options": ["0.4", "0.8", "0.6", "1.0"],
+              "answer": "C",
+              "explanation": "For a floating body, weight = buoyant force, so ρ(wood) × V × g = ρ(water) × V(submerged) × g. Therefore V(submerged)/V = 600 ÷ 1000 = 0.6, so 60% of the block is under water.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Water flows through a horizontal pipe. At point 1 the cross-sectional area is 0.02 m², the speed is 2 m/s and the pressure is 1.2 × 10⁵ Pa. At point 2 the area narrows to 0.01 m². What is the pressure at point 2? (ρ = 1000 kg/m³)",
+              "options": ["1.26 × 10⁵ Pa", "1.20 × 10⁵ Pa", "1.08 × 10⁵ Pa", "1.14 × 10⁵ Pa"],
+              "answer": "D",
+              "explanation": "Continuity gives v₂ = A₁v₁/A₂ = (0.02 × 2) ÷ 0.01 = 4 m/s. Bernoulli's equation for a horizontal pipe gives P₂ = P₁ + ½ρ(v₁² − v₂²) = 1.2 × 10⁵ + ½ × 1000 × (4 − 16) = 1.2 × 10⁵ − 6,000 = 1.14 × 10⁵ Pa.",
+              "difficulty": 3
+            },
+            {
+              "stem": "A metal block weighs 30 N in air and 20 N when fully submerged in water. What is the density of the metal? (density of water = 1000 kg/m³, g = 10 m/s²)",
+              "options": ["1,500 kg/m³", "2,000 kg/m³", "3,000 kg/m³", "667 kg/m³"],
+              "answer": "C",
+              "explanation": "Buoyant force = 30 N − 20 N = 10 N = ρ(water) × V × g, so V = 10 ÷ (1000 × 10) = 1.0 × 10⁻³ m³. The mass is 30 ÷ 10 = 3 kg, so the density is 3 kg ÷ (1.0 × 10⁻³ m³) = 3,000 kg/m³.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "title": "Electromagnetism",
+          "videos": [
+            {
+              "title": "Magnetic Fields and Magnetic Forces",
+              "description": "Describes magnetic field lines and calculates the force on a moving charge (F = qvB sin θ) and on a current-carrying wire (F = BIL sin θ).",
+              "duration_minutes": 36
+            },
+            {
+              "title": "Electromagnetic Induction: Faraday's and Lenz's Laws",
+              "description": "Explains magnetic flux, induced emf, Faraday's law and Lenz's law, and how generators at hydroelectric dams produce electricity.",
+              "duration_minutes": 42
+            },
+            {
+              "title": "Transformers and Power Transmission",
+              "description": "Derives the transformer equation, compares step-up and step-down transformers, and shows why power is transmitted at high voltage to reduce losses.",
+              "duration_minutes": 33
+            }
+          ],
+          "questions": [
+            {
+              "stem": "A straight wire 0.5 m long carries a current of 4 A at right angles to a uniform magnetic field of 0.2 T. What is the magnitude of the force on the wire?",
+              "options": ["0.1 N", "1.6 N", "0.4 N", "10 N"],
+              "answer": "C",
+              "explanation": "F = BIL sin θ = 0.2 T × 4 A × 0.5 m × sin 90° = 0.4 N.",
+              "difficulty": 1
+            },
+            {
+              "stem": "The magnetic flux through each turn of a 200-turn coil decreases from 0.05 Wb to 0.01 Wb in 0.2 s. What is the magnitude of the average induced emf?",
+              "options": ["40 V", "8 V", "0.04 V", "200 V"],
+              "answer": "A",
+              "explanation": "By Faraday's law, emf = N × ΔΦ/Δt = 200 × (0.05 − 0.01) Wb ÷ 0.2 s = 200 × 0.04 ÷ 0.2 = 40 V.",
+              "difficulty": 2
+            },
+            {
+              "stem": "The north pole of a bar magnet is pushed towards one end of a coil connected to a galvanometer. According to Lenz's law, the induced current will:",
+              "options": [
+                "make the near end of the coil a south pole, attracting the magnet",
+                "be zero, because the magnet itself carries no current",
+                "start only after the magnet has stopped moving",
+                "make the near end of the coil a north pole, opposing the motion of the magnet"
+              ],
+              "answer": "D",
+              "explanation": "Lenz's law states that the induced current flows so as to oppose the change that produces it. As the north pole approaches, the near end of the coil becomes a north pole and repels the magnet, so work must be done to push it in, which is consistent with conservation of energy.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A step-down transformer converts 220 V mains to 11 V for a phone charger. If the primary coil has 1,000 turns, how many turns does the secondary coil have? (Assume an ideal transformer.)",
+              "options": ["50", "20", "200", "20,000"],
+              "answer": "A",
+              "explanation": "For an ideal transformer, Vₛ/Vₚ = Nₛ/Nₚ, so Nₛ = 1,000 × 11 ÷ 220 = 50 turns.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A power station sends 10 MW of electrical power through transmission lines of total resistance 5 Ω at a voltage of 100 kV. How much power is lost as heat in the lines?",
+              "options": ["5 kW", "50 kW", "500 kW", "5 MW"],
+              "answer": "B",
+              "explanation": "The current in the lines is I = P/V = (10 × 10⁶ W) ÷ (100 × 10³ V) = 100 A. The power lost is I²R = 100² × 5 = 50,000 W = 50 kW, only 0.5% of the power sent.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "chemistry",
+      "name": "Chemistry",
+      "teacher_name": "Ms. Tigist Wolde",
+      "chapters": [
+        {
+          "title": "Acid-Base Equilibria",
+          "videos": [
+            {
+              "title": "Arrhenius, Brønsted–Lowry and Lewis Concepts",
+              "description": "Compares the three definitions of acids and bases and identifies conjugate acid–base pairs in reactions.",
+              "duration_minutes": 30
+            },
+            {
+              "title": "pH Calculations for Strong and Weak Acids and Bases",
+              "description": "Uses Kw, Ka and Kb to calculate pH, pOH and percent ionization for solutions of strong and weak acids and bases.",
+              "duration_minutes": 45
+            },
+            {
+              "title": "Buffers, Salt Hydrolysis and Titrations",
+              "description": "Explains how buffers resist pH change, predicts whether salt solutions are acidic, basic or neutral, and interprets titration curves and the choice of indicator.",
+              "duration_minutes": 42
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What is the pH of a 0.001 M HCl solution at 25 °C?",
+              "options": ["1", "3", "11", "0.001"],
+              "answer": "B",
+              "explanation": "HCl is a strong acid and ionizes completely, so [H⁺] = 0.001 M = 1 × 10⁻³ M. pH = −log(1 × 10⁻³) = 3.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Which of the following can act as a Lewis acid but NOT as a Brønsted–Lowry acid?",
+              "options": ["HCl", "NH₄⁺", "H₂O", "BF₃"],
+              "answer": "D",
+              "explanation": "BF₃ has only six valence electrons around boron, so it can accept an electron pair (Lewis acid), but it has no H⁺ to donate. HCl, NH₄⁺ and H₂O can all donate a proton, so they are also Brønsted–Lowry acids.",
+              "difficulty": 2
+            },
+            {
+              "stem": "What is the pH of a 0.10 M acetic acid solution? (Ka = 1.8 × 10⁻⁵)",
+              "options": ["2.87", "1.00", "4.74", "5.74"],
+              "answer": "A",
+              "explanation": "For a weak acid, [H⁺] ≈ √(Ka × C) = √(1.8 × 10⁻⁵ × 0.10) = √(1.8 × 10⁻⁶) ≈ 1.34 × 10⁻³ M. So pH = −log(1.34 × 10⁻³) ≈ 2.87.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A buffer solution contains 0.10 M acetic acid and 0.20 M sodium acetate. What is its pH? (pKa of acetic acid = 4.74, log 2 = 0.30)",
+              "options": ["4.44", "4.74", "5.04", "9.26"],
+              "answer": "C",
+              "explanation": "By the Henderson–Hasselbalch equation, pH = pKa + log([CH₃COO⁻]/[CH₃COOH]) = 4.74 + log(0.20/0.10) = 4.74 + 0.30 = 5.04.",
+              "difficulty": 3
+            },
+            {
+              "stem": "Which of the following 0.1 M aqueous solutions has a pH greater than 7?",
+              "options": ["NaCl", "NH₄Cl", "KNO₃", "CH₃COONa"],
+              "answer": "D",
+              "explanation": "CH₃COONa is the salt of a weak acid and a strong base, so the acetate ion hydrolyzes (CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻) and makes the solution basic. NaCl and KNO₃ give neutral solutions, and NH₄Cl gives an acidic one.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "title": "Electrochemistry",
+          "videos": [
+            {
+              "title": "Oxidation Numbers and Balancing Redox Equations",
+              "description": "Assigns oxidation numbers, identifies oxidizing and reducing agents, and balances redox equations by the half-reaction method.",
+              "duration_minutes": 38
+            },
+            {
+              "title": "Galvanic Cells and Standard Electrode Potentials",
+              "description": "Shows how galvanic cells produce electricity, calculates standard cell potentials from reduction potentials, and predicts whether reactions are spontaneous.",
+              "duration_minutes": 41
+            },
+            {
+              "title": "Electrolysis and Faraday's Laws",
+              "description": "Describes the electrolysis of molten and aqueous electrolytes, applies Faraday's laws to calculate the amounts deposited, and covers electroplating and refining.",
+              "duration_minutes": 40
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What is the oxidation number of manganese in potassium permanganate, KMnO₄?",
+              "options": ["+7", "+2", "+4", "+6"],
+              "answer": "A",
+              "explanation": "The compound is neutral, so (+1) + x + 4(−2) = 0, which gives x = +7 for manganese.",
+              "difficulty": 1
+            },
+            {
+              "stem": "For the cell Zn | Zn²⁺ || Cu²⁺ | Cu, the standard reduction potentials are E°(Zn²⁺/Zn) = −0.76 V and E°(Cu²⁺/Cu) = +0.34 V. What is the standard cell potential?",
+              "options": ["−1.10 V", "+0.42 V", "+1.10 V", "−0.42 V"],
+              "answer": "C",
+              "explanation": "E°cell = E°(cathode) − E°(anode) = +0.34 V − (−0.76 V) = +1.10 V. Copper(II) ions are reduced at the cathode and zinc is oxidized at the anode.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Given E°(Ag⁺/Ag) = +0.80 V and E°(Cu²⁺/Cu) = +0.34 V, which reaction is spontaneous under standard conditions?",
+              "options": [
+                "2Ag + Cu²⁺ → 2Ag⁺ + Cu",
+                "Cu + 2Ag⁺ → Cu²⁺ + 2Ag",
+                "Both reactions are spontaneous",
+                "Neither reaction is spontaneous"
+              ],
+              "answer": "B",
+              "explanation": "In Cu + 2Ag⁺ → Cu²⁺ + 2Ag, silver ions are reduced and copper is oxidized, so E°cell = 0.80 − 0.34 = +0.46 V. A positive E°cell means this reaction is spontaneous, while the reverse reaction (E°cell = −0.46 V) is not.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A current of 2.0 A is passed through aqueous CuSO₄ for 965 s. What mass of copper is deposited at the cathode? (Cu = 63.5 g/mol, F = 96,500 C/mol)",
+              "options": ["0.318 g", "1.27 g", "6.35 g", "0.635 g"],
+              "answer": "D",
+              "explanation": "Charge Q = It = 2.0 A × 965 s = 1,930 C, which is 1,930 ÷ 96,500 = 0.020 mol of electrons. Since Cu²⁺ + 2e⁻ → Cu, 0.010 mol of Cu forms: 0.010 × 63.5 = 0.635 g.",
+              "difficulty": 3
+            },
+            {
+              "stem": "During the electrolysis of concentrated aqueous sodium chloride (brine) with inert electrodes, what are the main products at the cathode and the anode?",
+              "options": [
+                "Sodium at the cathode and chlorine at the anode",
+                "Hydrogen at the cathode and oxygen at the anode",
+                "Hydrogen at the cathode and chlorine at the anode",
+                "Chlorine at the cathode and hydrogen at the anode"
+              ],
+              "answer": "C",
+              "explanation": "At the cathode water is reduced in preference to Na⁺ (2H₂O + 2e⁻ → H₂ + 2OH⁻), so hydrogen forms. At the anode the concentrated Cl⁻ ions are oxidized to Cl₂, and sodium hydroxide is left in solution.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Industrial Chemistry",
+          "videos": [
+            {
+              "title": "Natural Resources and Raw Materials for Industry",
+              "description": "Surveys Ethiopia's mineral and agricultural raw materials, such as limestone, potash and sugarcane, and what makes an industrial process economical.",
+              "duration_minutes": 25
+            },
+            {
+              "title": "Manufacture of Ammonia, Nitric Acid and Sulfuric Acid",
+              "description": "Explains the Haber, Ostwald and Contact processes, including how temperature, pressure and catalysts are chosen to balance yield, rate and cost.",
+              "duration_minutes": 44
+            },
+            {
+              "title": "Cement, Glass, Sugar and Paper Industries",
+              "description": "Describes the raw materials and main steps in producing cement, glass, sugar and paper, with examples from Ethiopian factories.",
+              "duration_minutes": 35
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which catalyst is used in the Haber process for manufacturing ammonia?",
+              "options": ["Vanadium(V) oxide", "Iron", "Platinum–rhodium gauze", "Nickel"],
+              "answer": "B",
+              "explanation": "The Haber process (N₂ + 3H₂ ⇌ 2NH₃) uses a finely divided iron catalyst. Vanadium(V) oxide is used in the Contact process, platinum–rhodium in the Ostwald process and nickel in hydrogenating vegetable oils.",
+              "difficulty": 1
+            },
+            {
+              "stem": "For the Haber process, N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔH = −92 kJ/mol. Which change increases the equilibrium yield of ammonia?",
+              "options": ["Increasing the temperature", "Decreasing the pressure", "Adding more catalyst", "Increasing the pressure"],
+              "answer": "D",
+              "explanation": "The forward reaction reduces 4 moles of gas to 2, so raising the pressure shifts the equilibrium to the right (Le Chatelier's principle). Raising the temperature favours the endothermic reverse reaction, and a catalyst only helps equilibrium be reached faster without changing the yield.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In the Contact process, SO₃ is absorbed in concentrated sulfuric acid to form oleum (H₂S₂O₇) instead of being dissolved directly in water. Why?",
+              "options": [
+                "SO₃ does not react with water at all",
+                "Oleum is the final product needed by all industries",
+                "Dissolving SO₃ directly in water is violently exothermic and forms a corrosive acid mist",
+                "Water would poison the vanadium(V) oxide catalyst"
+              ],
+              "answer": "C",
+              "explanation": "SO₃ reacts with water so exothermically that a fine mist of sulfuric acid droplets forms, which is hard to condense and dangerous. Absorbing SO₃ in concentrated H₂SO₄ to make oleum and then diluting the oleum with water gives sulfuric acid safely.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In an ammonia plant, 28 tonnes of nitrogen react with excess hydrogen: N₂ + 3H₂ ⇌ 2NH₃. If the percentage yield is 15%, what mass of ammonia is obtained? (N = 14, H = 1)",
+              "options": ["5.1 tonnes", "4.2 tonnes", "15 tonnes", "34 tonnes"],
+              "answer": "A",
+              "explanation": "From the equation, 1 mol N₂ (28 g) gives 2 mol NH₃ (2 × 17 = 34 g), so 28 tonnes of N₂ could give 34 tonnes of NH₃. At 15% yield the actual mass is 0.15 × 34 = 5.1 tonnes.",
+              "difficulty": 3
+            },
+            {
+              "stem": "Ethiopia produces large amounts of cement for its construction industry. Which raw materials are heated together in a rotary kiln to make Portland cement clinker?",
+              "options": ["Limestone and clay (or shale)", "Sand and soda ash", "Bauxite and cryolite", "Iron ore and coke"],
+              "answer": "A",
+              "explanation": "Portland cement is made by heating limestone (CaCO₃) with clay or shale in a rotary kiln at about 1,450 °C to form clinker, which is then ground with a little gypsum. Sand and soda ash are used for glass, bauxite and cryolite for aluminium, and iron ore and coke for iron.",
+              "difficulty": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "biology",
+      "name": "Biology",
+      "teacher_name": "Ms. Rahel Getachew",
+      "chapters": [
+        {
+          "title": "Microorganisms",
+          "videos": [
+            {
+              "title": "Bacteria: Structure, Growth and Reproduction",
+              "description": "Describes prokaryotic cell structure, bacterial shapes, Gram staining and reproduction by binary fission.",
+              "duration_minutes": 32
+            },
+            {
+              "title": "Viruses, Fungi and Protozoa",
+              "description": "Compares the structure and reproduction of viruses, fungi and protozoa, and explains why viruses are not considered living cells.",
+              "duration_minutes": 35
+            },
+            {
+              "title": "Microorganisms in Health, Food and Agriculture",
+              "description": "Explores microbes that cause diseases such as malaria and tuberculosis, and useful microbes that ferment injera and yoghurt, make vaccines and fix nitrogen.",
+              "duration_minutes": 30
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which of the following structures is NOT found in a typical bacterial cell?",
+              "options": ["Cell wall", "Ribosomes", "Plasma membrane", "A membrane-bound nucleus"],
+              "answer": "D",
+              "explanation": "Bacteria are prokaryotes: their DNA lies in the cytoplasm in a region called the nucleoid, with no nuclear membrane. They do have a cell wall, a plasma membrane and (70S) ribosomes.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A bacterium divides by binary fission every 20 minutes. Starting from a single cell under ideal conditions, how many cells will there be after 2 hours?",
+              "options": ["12", "64", "32", "128"],
+              "answer": "B",
+              "explanation": "2 hours = 120 minutes, which is 120 ÷ 20 = 6 generations. The population doubles each generation, so N = 1 × 2⁶ = 64 cells.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In Gram staining, Gram-positive bacteria stay purple while Gram-negative bacteria appear pink. What causes this difference?",
+              "options": [
+                "Gram-positive bacteria have a thick peptidoglycan wall that retains the crystal violet–iodine complex",
+                "Gram-negative bacteria have no cell wall at all",
+                "Gram-positive bacteria have an outer lipid membrane that traps the purple dye",
+                "Gram-negative bacteria contain more DNA, which absorbs the pink safranin"
+              ],
+              "answer": "A",
+              "explanation": "The thick peptidoglycan layer of Gram-positive cells traps the crystal violet–iodine complex when alcohol is applied, so they stay purple. Gram-negative cells have a thin peptidoglycan layer and an outer membrane, so they lose the purple dye and take up the pink safranin counterstain.",
+              "difficulty": 3
+            },
+            {
+              "stem": "Antibiotics such as penicillin do not cure viral infections such as influenza because viruses:",
+              "options": [
+                "have thick cell walls that antibiotics cannot penetrate",
+                "reproduce too slowly for antibiotics to act",
+                "lack the cell walls and ribosomes that antibiotics target, and multiply using the host cell's machinery",
+                "are much larger than bacteria"
+              ],
+              "answer": "C",
+              "explanation": "Antibiotics act on bacterial structures and processes, such as peptidoglycan cell walls and 70S ribosomes. Viruses have neither; they multiply inside host cells using the host's machinery, so antibiotics have nothing to act on.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Rhizobium bacteria live in the root nodules of legumes such as faba bean and chickpea. Why are they important to Ethiopian farmers?",
+              "options": [
+                "They convert atmospheric nitrogen (N₂) into ammonia that the plant can use",
+                "They convert nitrates in the soil back into nitrogen gas",
+                "They carry out photosynthesis for the plant",
+                "They produce antibiotics that kill all other soil bacteria"
+              ],
+              "answer": "A",
+              "explanation": "Rhizobium fixes atmospheric nitrogen (N₂) into ammonia, which the legume uses to make proteins, while the plant supplies the bacteria with sugars. This enriches the soil with nitrogen and reduces the need for chemical fertilizer, which is why legumes are rotated with cereals.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "title": "Energy Transformation",
+          "videos": [
+            {
+              "title": "ATP and the Light-Dependent Reactions",
+              "description": "Explains the role of ATP and the structure of the chloroplast, and shows how light energy splits water to produce ATP, NADPH and oxygen.",
+              "duration_minutes": 36
+            },
+            {
+              "title": "The Calvin Cycle and Limiting Factors",
+              "description": "Follows carbon fixation by RuBisCO in the Calvin cycle, compares C3 and C4 plants, and examines how light, CO₂ and temperature limit photosynthesis.",
+              "duration_minutes": 34
+            },
+            {
+              "title": "Cellular Respiration and Fermentation",
+              "description": "Traces glycolysis, the Krebs cycle and the electron transport chain, and compares aerobic respiration with lactic acid and alcoholic fermentation.",
+              "duration_minutes": 45
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Where in the chloroplast do the light-dependent reactions of photosynthesis take place?",
+              "options": ["Stroma", "Outer membrane", "Thylakoid membranes", "Matrix"],
+              "answer": "C",
+              "explanation": "The light-dependent reactions take place on the thylakoid membranes, where chlorophyll and the electron transport chain are located. The Calvin cycle occurs in the stroma, and the matrix is part of the mitochondrion.",
+              "difficulty": 1
+            },
+            {
+              "stem": "The oxygen gas released during photosynthesis comes from which molecule?",
+              "options": ["Carbon dioxide", "Glucose", "RuBP", "Water"],
+              "answer": "D",
+              "explanation": "During photolysis in the light-dependent reactions, water is split: 2H₂O → 4H⁺ + 4e⁻ + O₂. Experiments with the oxygen isotope ¹⁸O showed that the O₂ released comes from water, not from CO₂.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Where does glycolysis take place, and what is its net ATP yield per molecule of glucose?",
+              "options": [
+                "Cytoplasm; net 2 ATP",
+                "Mitochondrial matrix; net 2 ATP",
+                "Cytoplasm; net 4 ATP",
+                "Inner mitochondrial membrane; net 34 ATP"
+              ],
+              "answer": "A",
+              "explanation": "Glycolysis occurs in the cytoplasm, where glucose is split into two pyruvate molecules. It produces 4 ATP but uses 2, giving a net gain of 2 ATP (plus 2 NADH).",
+              "difficulty": 2
+            },
+            {
+              "stem": "Near the end of a 10,000 m race, an Ethiopian athlete's leg muscles produce lactate. Which statement best explains this?",
+              "options": [
+                "Lactate is made because it yields more ATP than aerobic respiration",
+                "Oxygen supply cannot keep up with demand, so pyruvate is reduced to lactate to regenerate NAD⁺ and keep glycolysis running",
+                "The Krebs cycle converts glucose directly into lactate",
+                "The muscles have run out of glucose, so they make lactate from fat instead"
+              ],
+              "answer": "B",
+              "explanation": "When oxygen cannot be supplied fast enough, the electron transport chain slows and NAD⁺ is not regenerated. Reducing pyruvate to lactate regenerates NAD⁺ so glycolysis can continue, although it yields only 2 ATP per glucose.",
+              "difficulty": 3
+            },
+            {
+              "stem": "In the Calvin cycle of C3 plants such as wheat, what is the first stable product formed when CO₂ is fixed?",
+              "options": ["Glucose", "Oxaloacetate", "Pyruvate", "3-phosphoglycerate (PGA)"],
+              "answer": "D",
+              "explanation": "RuBisCO joins CO₂ to the 5-carbon RuBP, forming an unstable 6-carbon compound that immediately splits into two molecules of 3-phosphoglycerate (PGA). Oxaloacetate is the first product in C4 plants such as maize and sugarcane.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Evolution",
+          "videos": [
+            {
+              "title": "Theories of Evolution: Lamarck and Darwin",
+              "description": "Compares Lamarck's inheritance of acquired characteristics with Darwin's theory of natural selection and explains why Darwin's theory is accepted.",
+              "duration_minutes": 28
+            },
+            {
+              "title": "Evidence for Evolution",
+              "description": "Examines fossil, anatomical, embryological and molecular evidence, including homologous and analogous structures and the Lucy fossil from Ethiopia's Afar region.",
+              "duration_minutes": 33
+            },
+            {
+              "title": "Natural Selection and Speciation",
+              "description": "Explains directional, stabilizing and balancing selection, and how geographical and reproductive isolation lead to the formation of new species.",
+              "duration_minutes": 37
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which pair consists of homologous structures?",
+              "options": [
+                "Wing of a bird and wing of a butterfly",
+                "Eye of an octopus and eye of a human",
+                "Spines of a cactus and quills of a porcupine",
+                "Forelimb of a human and flipper of a whale"
+              ],
+              "answer": "D",
+              "explanation": "The human forelimb and the whale flipper share the same basic bone pattern (humerus, radius, ulna, carpals and phalanges) inherited from a common ancestor, even though they are used differently. The other pairs are analogous: they serve similar functions but evolved independently.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Which statement reflects Lamarck's idea rather than Darwin's?",
+              "options": [
+                "Individuals with favourable variations are more likely to survive and reproduce.",
+                "Giraffes got long necks because each generation stretched to reach high leaves and passed the longer necks on to their offspring.",
+                "More offspring are produced than can survive.",
+                "Members of a population vary in their traits."
+              ],
+              "answer": "B",
+              "explanation": "Lamarck proposed that characteristics acquired during an organism's life through use and disuse are passed on to offspring, as in the stretching giraffe. The other three statements are parts of Darwin's theory of natural selection.",
+              "difficulty": 2
+            },
+            {
+              "stem": "The famous fossil Lucy, discovered in 1974 at Hadar in the Afar region of Ethiopia, belongs to which species?",
+              "options": ["Australopithecus afarensis", "Homo sapiens", "Homo erectus", "Ardipithecus ramidus"],
+              "answer": "A",
+              "explanation": "Lucy is a partial skeleton of Australopithecus afarensis, about 3.2 million years old. Her pelvis and leg bones show that she walked upright, making her important evidence for early bipedalism.",
+              "difficulty": 1
+            },
+            {
+              "stem": "In parts of Africa where malaria is common, the sickle-cell allele (HbS) stays at a relatively high frequency even though people with the genotype HbS HbS often die young. Which statement best explains this?",
+              "options": [
+                "The HbS allele is dominant over the normal allele",
+                "Mutation recreates the HbS allele at a high rate in every generation",
+                "Heterozygous carriers (HbA HbS) resist malaria better than HbA HbA individuals, so they survive and reproduce more",
+                "Malaria parasites cause the HbS mutation in red blood cells"
+              ],
+              "answer": "C",
+              "explanation": "This is heterozygote advantage, a form of balancing selection: carriers have only mild symptoms but are more resistant to severe malaria, so in malarial regions they have the highest fitness. Their survival keeps the HbS allele in the population even though HbS HbS individuals are selected against.",
+              "difficulty": 3
+            },
+            {
+              "stem": "Two populations of the same species become separated by a mountain range. After many generations they can no longer interbreed, even when brought together. This is an example of:",
+              "options": ["Sympatric speciation", "Allopatric speciation", "Convergent evolution", "Artificial selection"],
+              "answer": "B",
+              "explanation": "Allopatric speciation occurs when a geographical barrier separates populations, and different mutations and selection pressures then make them reproductively isolated. Sympatric speciation occurs without geographical separation.",
+              "difficulty": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

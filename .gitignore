@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+*.log
+
+# Secrets: backend/.env holds the Supabase secret key. mobile/.env only has public values.
+backend/.env
+.env.local
+.env.*.local
+
+# Build output
+backend/dist/
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/android/
+mobile/ios/

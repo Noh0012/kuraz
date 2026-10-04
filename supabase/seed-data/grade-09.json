@@ -1,0 +1,575 @@
+{
+  "grade": 9,
+  "subjects": [
+    {
+      "key": "math",
+      "name": "Mathematics",
+      "teacher_name": "Mr. Yonas Tesfaye",
+      "chapters": [
+        {
+          "title": "Further on Sets",
+          "videos": [
+            {
+              "title": "Describing Sets: Listing and Set-Builder Notation",
+              "description": "Reviews what a set is and shows how to describe sets in words, by listing their elements and with set-builder notation, including finite, infinite and empty sets.",
+              "duration_minutes": 18
+            },
+            {
+              "title": "Subsets, Proper Subsets and Power Sets",
+              "description": "Explains when one set is a subset of another, how subsets differ from proper subsets, and how to list a power set and count subsets using 2ⁿ.",
+              "duration_minutes": 24
+            },
+            {
+              "title": "Set Operations and Venn Diagrams",
+              "description": "Uses Venn diagrams to find unions, intersections, complements, differences and symmetric differences, then applies them to real-life counting problems.",
+              "duration_minutes": 33
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which of the following sets is empty?",
+              "options": [
+                "{x | x is a natural number and 3 < x < 4}",
+                "{0}",
+                "{x | x² = 9}",
+                "{x | x is an even prime number}"
+              ],
+              "answer": "A",
+              "explanation": "No natural number lies strictly between 3 and 4, so the first set has no elements. {0} contains the element 0, {x | x² = 9} = {−3, 3}, and the only even prime number is 2.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A set A has 5 elements. How many proper subsets does A have?",
+              "options": ["32", "31", "25", "10"],
+              "answer": "B",
+              "explanation": "A set with n elements has 2ⁿ subsets, so A has 2⁵ = 32 subsets. Every subset except A itself is proper, giving 32 − 1 = 31 proper subsets.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Let U = {1, 2, 3, …, 10}, A = {2, 4, 6, 8, 10} and B = {1, 2, 3, 4, 5}. What is A ∩ B′?",
+              "options": ["{2, 4}", "{6, 7, 8, 9, 10}", "{1, 3, 5}", "{6, 8, 10}"],
+              "answer": "D",
+              "explanation": "B′ = U − B = {6, 7, 8, 9, 10}. The elements of A that are also in B′ are 6, 8 and 10, so A ∩ B′ = {6, 8, 10}.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In a class of 40 students in Hawassa, 24 play football, 19 play volleyball and 5 play neither sport. How many students play football only?",
+              "options": ["8", "16", "11", "19"],
+              "answer": "B",
+              "explanation": "Students who play at least one sport: n(F ∪ V) = 40 − 5 = 35. Then n(F ∩ V) = 24 + 19 − 35 = 8, so football only = 24 − 8 = 16.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "The Number System",
+          "videos": [
+            {
+              "title": "Rational Numbers and Repeating Decimals",
+              "description": "Shows why every rational number has a terminating or repeating decimal and how to convert a repeating decimal such as 0.363636… into a fraction.",
+              "duration_minutes": 21
+            },
+            {
+              "title": "Irrational Numbers and the Real Number Line",
+              "description": "Introduces irrational numbers such as √2 and π, shows how to locate them on the number line, and explains how rational and irrational numbers together form the real numbers.",
+              "duration_minutes": 26
+            },
+            {
+              "title": "Simplifying Radicals and Rationalizing Denominators",
+              "description": "Practises simplifying square roots, adding and multiplying radicals, and removing radicals from denominators using conjugates.",
+              "duration_minutes": 35
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which of the following numbers is irrational?",
+              "options": ["√49", "0.121212…", "22/7", "√20"],
+              "answer": "D",
+              "explanation": "√20 = 2√5 cannot be written as a ratio of two integers, so it is irrational. √49 = 7, 0.121212… = 12/99 and 22/7 are all rational.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Express 0.363636… (the digits 36 repeat forever) as a fraction in its simplest form.",
+              "options": ["9/25", "4/11", "36/100", "6/11"],
+              "answer": "B",
+              "explanation": "Let x = 0.3636…. Then 100x = 36.3636…, so 100x − x = 36, which gives 99x = 36 and x = 36/99 = 4/11.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Two minibus taxis on different routes leave Meskel Square at 7:00 a.m. One returns to the square every 24 minutes and the other every 36 minutes. At what time will both next be at the square together?",
+              "options": ["7:36 a.m.", "8:00 a.m.", "8:12 a.m.", "9:00 a.m."],
+              "answer": "C",
+              "explanation": "We need the LCM of 24 and 36. Since 24 = 2³ × 3 and 36 = 2² × 3², LCM = 2³ × 3² = 72 minutes, and 72 minutes after 7:00 a.m. is 8:12 a.m.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Rationalize the denominator and simplify: 2 ÷ (√5 − √3)",
+              "options": ["√5 + √3", "√5 − √3", "2(√5 + √3)", "(√5 + √3)/2"],
+              "answer": "A",
+              "explanation": "Multiply the numerator and denominator by the conjugate √5 + √3: 2(√5 + √3) ÷ ((√5)² − (√3)²) = 2(√5 + √3) ÷ (5 − 3) = √5 + √3.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "english",
+      "name": "English",
+      "teacher_name": "Ms. Meron Haile",
+      "chapters": [
+        {
+          "title": "Living in Urban Areas",
+          "videos": [
+            {
+              "title": "Reading: Life in a Big City",
+              "description": "Reads a passage about city life and practises finding the main idea and supporting details about the advantages and disadvantages of living in urban areas.",
+              "duration_minutes": 27
+            },
+            {
+              "title": "Tag Questions and Wh-Questions",
+              "description": "Explains how to form tag questions with the correct auxiliary verb and how to ask wh-questions, with practice on rising and falling intonation.",
+              "duration_minutes": 22
+            },
+            {
+              "title": "Simple Present vs. Present Continuous",
+              "description": "Contrasts the simple present for habits and routines with the present continuous for actions happening now or around now, using examples from daily city life.",
+              "duration_minutes": 24
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Choose the correct question tag: “You live in Bole, _____?”",
+              "options": ["do you", "don't you", "aren't you", "isn't it"],
+              "answer": "B",
+              "explanation": "The statement is positive and uses the simple present with “you”, so the tag needs the negative auxiliary “don't” and the same pronoun: “don't you?”",
+              "difficulty": 1
+            },
+            {
+              "stem": "Choose the correct verb forms: “Most people in our neighbourhood _____ to work by minibus taxi, but this week many of them _____ because the main road is closed for repairs.”",
+              "options": ["go / are walking", "are going / walk", "goes / walks", "went / walking"],
+              "answer": "A",
+              "explanation": "“Go” is in the simple present because it describes a regular habit. “Are walking” is in the present continuous because it describes a temporary situation happening this week.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Choose the phrasal verb that best completes the sentence: “The city administration plans to _____ the old, unsafe buildings and put up new apartment blocks in their place.”",
+              "options": ["pull down", "look after", "put off", "give up"],
+              "answer": "A",
+              "explanation": "“Pull down” means to demolish a building, which fits replacing old buildings with new ones. “Look after” means take care of, “put off” means postpone and “give up” means stop trying.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Read the passage and answer the question. “Every morning, thousands of people pour into the centre of Addis Ababa. Light-rail trains are packed, minibus taxis queue at every stop, and street vendors set up their stalls before the shops open. By evening, the flow reverses as workers head home to the fast-growing neighbourhoods on the edge of the city.” What can you infer from the passage?",
+              "options": [
+                "Most workers live in the city centre.",
+                "Street vendors work only in the evening.",
+                "Light-rail trains do not run in the morning.",
+                "Many people who work in the centre live on the outskirts of the city."
+              ],
+              "answer": "D",
+              "explanation": "People pour into the centre in the morning and head home to neighbourhoods “on the edge of the city” in the evening, so many workers must live on the outskirts. The other three options contradict details in the passage.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Study Skills",
+          "videos": [
+            {
+              "title": "Reading: Learning Strategies That Work",
+              "description": "Reads a passage on how successful students plan, take notes and review, and builds vocabulary through common study collocations.",
+              "duration_minutes": 25
+            },
+            {
+              "title": "Connectors, Sequence Words and Adverbs of Frequency",
+              "description": "Shows how addition markers such as moreover and in addition, sequence words such as first and finally, and adverbs of frequency make writing about study habits clear and coherent.",
+              "duration_minutes": 21
+            },
+            {
+              "title": "Simple Past and Past Continuous Tenses",
+              "description": "Explains how to use the past continuous for a longer background action and the simple past for a shorter action that interrupts it.",
+              "duration_minutes": 23
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Choose the word that correctly completes the collocation: “I always _____ my homework before I watch TV.”",
+              "options": ["make", "take", "do", "give"],
+              "answer": "C",
+              "explanation": "In English we say “do homework”. “Make”, “take” and “give” do not combine with “my homework” in this meaning.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Choose the best connector: “Reading every day improves your vocabulary. _____, it helps you to write more fluently.”",
+              "options": ["However", "Although", "In addition", "Instead"],
+              "answer": "C",
+              "explanation": "The second sentence adds another benefit of reading, so an addition marker such as “In addition” is needed. “However” and “Instead” signal contrast or replacement, and “Although” cannot begin a main clause like this.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Choose the correct verb forms: “While I _____ for my biology test last night, the electricity suddenly _____ off.”",
+              "options": ["studied / was going", "am studying / goes", "had studied / was going", "was studying / went"],
+              "answer": "D",
+              "explanation": "The longer background action takes the past continuous (“was studying”), and the short action that interrupted it takes the simple past (“went off”).",
+              "difficulty": 2
+            },
+            {
+              "stem": "Read the passage and answer the question. “Selam used to read all her notes the night before a test, but a week later she had forgotten most of them. This year she changed her approach. After every lesson she writes a short summary, and every Saturday she tests herself with questions from the textbook. Her results have improved, and she feels much calmer before exams.” Which statement is best supported by the passage?",
+              "options": [
+                "Regular review and self-testing helped Selam remember more.",
+                "Selam now studies only on Saturdays.",
+                "Selam no longer takes notes in class.",
+                "Reading all your notes the night before a test is the best way to study."
+              ],
+              "answer": "A",
+              "explanation": "Selam's results improved after she began summarizing every lesson and testing herself each week. The passage does not say she studies only on Saturdays or has stopped taking notes, and it shows that last-minute reading did not work for her.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics",
+      "name": "Physics",
+      "teacher_name": "Mr. Biruk Girma",
+      "chapters": [
+        {
+          "title": "Physical Quantities",
+          "videos": [
+            {
+              "title": "Base and Derived Quantities in the SI System",
+              "description": "Introduces the seven SI base quantities and their units, and shows how derived quantities such as area, density and force are built from them.",
+              "duration_minutes": 20
+            },
+            {
+              "title": "Prefixes, Unit Conversion and Scientific Notation",
+              "description": "Practises using prefixes such as kilo-, centi- and milli-, converting between units such as km/h and m/s, and writing very large or very small numbers in scientific notation.",
+              "duration_minutes": 26
+            },
+            {
+              "title": "Measurement Uncertainty and Significant Figures",
+              "description": "Explains accuracy, precision and sources of error in measurement, and shows how to count and round to the correct number of significant figures.",
+              "duration_minutes": 29
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which of the following is an SI base quantity?",
+              "options": ["Force", "Velocity", "Electric current", "Energy"],
+              "answer": "C",
+              "explanation": "Electric current, measured in amperes (A), is one of the seven SI base quantities. Force, velocity and energy are derived quantities built from base quantities.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A minibus travels along a straight road at 72 km/h. What is its speed in m/s?",
+              "options": ["7.2 m/s", "20 m/s", "36 m/s", "259.2 m/s"],
+              "answer": "B",
+              "explanation": "72 km/h = (72 × 1000 m) ÷ (3600 s) = 72,000 m ÷ 3600 s = 20 m/s.",
+              "difficulty": 1
+            },
+            {
+              "stem": "How many significant figures are there in the measurement 0.004050 kg?",
+              "options": ["7", "6", "3", "4"],
+              "answer": "D",
+              "explanation": "Leading zeros only show the position of the decimal point, so they are not significant. The digits 4, 0 and 5 and the final trailing zero after the decimal point are significant, giving 4 significant figures.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A stone has a density of 2.5 g/cm³. What is its density in kg/m³?",
+              "options": ["0.0025 kg/m³", "2.5 kg/m³", "250 kg/m³", "2500 kg/m³"],
+              "answer": "D",
+              "explanation": "1 g = 10⁻³ kg and 1 cm³ = 10⁻⁶ m³, so 1 g/cm³ = 10⁻³ ÷ 10⁻⁶ = 1000 kg/m³. Therefore 2.5 g/cm³ = 2.5 × 1000 = 2500 kg/m³.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Motion in a Straight Line",
+          "videos": [
+            {
+              "title": "Distance, Displacement, Speed and Velocity",
+              "description": "Distinguishes the scalars distance and speed from the vectors displacement and velocity, and calculates average speed and average velocity for journeys along a straight road.",
+              "duration_minutes": 23
+            },
+            {
+              "title": "Acceleration and Velocity–Time Graphs",
+              "description": "Defines acceleration as the rate of change of velocity and shows how to read acceleration from the slope and displacement from the area under a velocity–time graph.",
+              "duration_minutes": 31
+            },
+            {
+              "title": "Relative Velocity in One Dimension",
+              "description": "Explains how to find the velocity of one object as seen from another when both move along the same straight line, in the same or opposite directions.",
+              "duration_minutes": 19
+            }
+          ],
+          "questions": [
+            {
+              "stem": "A student walks 400 m east and then 300 m west along a straight road. What is her displacement?",
+              "options": ["700 m east", "100 m west", "100 m east", "500 m east"],
+              "answer": "C",
+              "explanation": "Taking east as positive, displacement = +400 m − 300 m = +100 m, which is 100 m east. The distance walked is 700 m, but displacement depends only on the starting and finishing points.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A car starts from rest and reaches a velocity of 24 m/s in 8 s with uniform acceleration. What is its acceleration?",
+              "options": ["3 m/s²", "0.33 m/s²", "16 m/s²", "192 m/s²"],
+              "answer": "A",
+              "explanation": "a = (v − u) ÷ t = (24 m/s − 0 m/s) ÷ 8 s = 3 m/s².",
+              "difficulty": 1
+            },
+            {
+              "stem": "Two trucks approach each other on a straight road, one at 60 km/h and the other at 40 km/h. What is the speed of one truck relative to the other?",
+              "options": ["20 km/h", "50 km/h", "60 km/h", "100 km/h"],
+              "answer": "D",
+              "explanation": "When two objects move towards each other, their relative speed is the sum of their speeds: 60 km/h + 40 km/h = 100 km/h.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A velocity–time graph shows a car's velocity increasing uniformly from 10 m/s to 20 m/s in 5 s. How far does the car travel during these 5 s?",
+              "options": ["50 m", "75 m", "100 m", "150 m"],
+              "answer": "B",
+              "explanation": "Displacement equals the area under the velocity–time graph, which here is a trapezium: ½ × (10 m/s + 20 m/s) × 5 s = 75 m.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "chemistry",
+      "name": "Chemistry",
+      "teacher_name": "Ms. Selamawit Tadesse",
+      "chapters": [
+        {
+          "title": "Structure of the Atom",
+          "videos": [
+            {
+              "title": "Dalton's Atomic Theory and Subatomic Particles",
+              "description": "Traces the development of atomic theory from Dalton to the discovery of the electron, proton and neutron by Thomson, Rutherford and Chadwick.",
+              "duration_minutes": 25
+            },
+            {
+              "title": "Atomic Number, Mass Number and Isotopes",
+              "description": "Explains how to find the numbers of protons, neutrons and electrons in atoms and ions, and how to calculate relative atomic mass from isotope abundances.",
+              "duration_minutes": 27
+            },
+            {
+              "title": "Bohr's Model and Electron Configuration",
+              "description": "Describes Bohr's energy levels and the idea of sublevels, and shows how to write electron configurations for the first 20 elements.",
+              "duration_minutes": 32
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which experiment showed that an atom has a small, dense, positively charged nucleus?",
+              "options": [
+                "Thomson's cathode-ray experiment",
+                "Millikan's oil-drop experiment",
+                "Chadwick's discovery of the neutron",
+                "Rutherford's gold-foil (alpha-particle scattering) experiment"
+              ],
+              "answer": "D",
+              "explanation": "In Rutherford's experiment most alpha particles passed straight through the gold foil, but a few were deflected through large angles. This showed that the positive charge and most of the mass of an atom are concentrated in a tiny nucleus.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Natural chlorine is 75% chlorine-35 and 25% chlorine-37. What is the relative atomic mass of chlorine?",
+              "options": ["35.0", "35.5", "36.0", "36.5"],
+              "answer": "B",
+              "explanation": "Relative atomic mass = (75 × 35 + 25 × 37) ÷ 100 = (2625 + 925) ÷ 100 = 3550 ÷ 100 = 35.5.",
+              "difficulty": 2
+            },
+            {
+              "stem": "What is the electron configuration of magnesium (atomic number 12)?",
+              "options": ["1s² 2s² 2p⁶ 3s²", "1s² 2s² 2p⁸", "1s² 2s² 2p⁶ 3p²", "1s² 2s² 2p⁴ 3s² 3p²"],
+              "answer": "A",
+              "explanation": "Magnesium has 12 electrons. Filling sublevels in order of increasing energy gives 1s² (2), 2s² (4), 2p⁶ (10) and 3s² (12), so the configuration is 1s² 2s² 2p⁶ 3s², or 2, 8, 2 by shells.",
+              "difficulty": 2
+            },
+            {
+              "stem": "An ion X²⁻ has 18 electrons and a mass number of 34. How many neutrons are in its nucleus?",
+              "options": ["16", "20", "18", "34"],
+              "answer": "C",
+              "explanation": "X²⁻ has gained 2 electrons, so the neutral atom has 18 − 2 = 16 electrons and therefore 16 protons. Neutrons = mass number − protons = 34 − 16 = 18.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Periodic Classification of Elements",
+          "videos": [
+            {
+              "title": "From Döbereiner's Triads to Mendeleev's Periodic Table",
+              "description": "Reviews early attempts to group elements with similar properties, from Döbereiner's triads and Newlands' octaves to Mendeleev's table and its successful predictions.",
+              "duration_minutes": 22
+            },
+            {
+              "title": "The Modern Periodic Law: Periods, Groups and Blocks",
+              "description": "Explains why elements are arranged by increasing atomic number and how to locate an element's period, group and block from its electron configuration.",
+              "duration_minutes": 28
+            },
+            {
+              "title": "Periodic Trends: Atomic Radius, Ionization Energy and Electronegativity",
+              "description": "Shows how atomic size, ionization energy, electronegativity and metallic character change across a period and down a group, and explains why.",
+              "duration_minutes": 33
+            }
+          ],
+          "questions": [
+            {
+              "stem": "In the modern periodic table, elements are arranged in order of increasing:",
+              "options": ["atomic mass", "atomic number", "number of neutrons", "density"],
+              "answer": "B",
+              "explanation": "The modern periodic law states that the properties of elements are periodic functions of their atomic numbers, so elements are arranged by increasing atomic number (number of protons).",
+              "difficulty": 1
+            },
+            {
+              "stem": "An element has the electron configuration 2, 8, 7. In which period and group is it found?",
+              "options": ["Period 7, Group IIIA", "Period 2, Group VIIA", "Period 3, Group VA", "Period 3, Group VIIA"],
+              "answer": "D",
+              "explanation": "Its electrons occupy three shells, so the element is in Period 3. It has 7 valence electrons, so it belongs to Group VIIA (Group 17). The element is chlorine.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Which of the following Period 3 elements has the largest atomic radius?",
+              "options": ["Na", "Mg", "Al", "Cl"],
+              "answer": "A",
+              "explanation": "Across a period the nuclear charge increases while electrons are added to the same shell, so the electrons are pulled closer and atoms get smaller. Sodium, at the start of Period 3, therefore has the largest radius.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Which of the following elements has the highest first ionization energy?",
+              "options": ["Na", "Mg", "Ne", "Ar"],
+              "answer": "C",
+              "explanation": "Ionization energy increases across a period and decreases down a group. Neon has a full outer shell that is closer to the nucleus than argon's, so removing an electron from neon needs more energy than from argon, magnesium or sodium.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "biology",
+      "name": "Biology",
+      "teacher_name": "Ms. Tigist Mekonnen",
+      "chapters": [
+        {
+          "title": "Characteristics and Classification of Organisms",
+          "videos": [
+            {
+              "title": "Characteristics of Living Things",
+              "description": "Covers the features shared by all living things, including nutrition, respiration, excretion, growth, reproduction, sensitivity and movement.",
+              "duration_minutes": 16
+            },
+            {
+              "title": "Taxonomic Hierarchy and Binomial Nomenclature",
+              "description": "Explains the levels of classification from kingdom to species and the rules for writing scientific names, such as Eragrostis tef for teff.",
+              "duration_minutes": 24
+            },
+            {
+              "title": "The Five-Kingdom System of Classification",
+              "description": "Compares the main features of Monera, Protista, Fungi, Plantae and Animalia using familiar Ethiopian examples.",
+              "duration_minutes": 31
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which list shows the levels of classification in the correct order, from largest to smallest?",
+              "options": [
+                "Kingdom, Phylum, Class, Order, Family, Genus, Species",
+                "Kingdom, Class, Phylum, Order, Family, Species, Genus",
+                "Phylum, Kingdom, Class, Family, Order, Genus, Species",
+                "Kingdom, Phylum, Order, Class, Genus, Family, Species"
+              ],
+              "answer": "A",
+              "explanation": "The taxonomic hierarchy from the largest group to the smallest is Kingdom → Phylum → Class → Order → Family → Genus → Species.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Which of the following correctly writes the scientific name of teff?",
+              "options": ["eragrostis tef", "Eragrostis Tef", "Tef eragrostis", "Eragrostis tef"],
+              "answer": "D",
+              "explanation": "In binomial nomenclature the genus name comes first and begins with a capital letter, and the species name follows in lower-case letters. The name is printed in italics or underlined when handwritten.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Mushrooms are placed in kingdom Fungi rather than kingdom Plantae mainly because they:",
+              "options": [
+                "are multicellular",
+                "have cells with a nucleus",
+                "lack chlorophyll and absorb food from their surroundings",
+                "grow in soil"
+              ],
+              "answer": "C",
+              "explanation": "Plants contain chlorophyll and make their own food by photosynthesis, but fungi have no chlorophyll and feed by absorbing nutrients from dead or living matter. Both groups can be multicellular, have nucleated cells and grow in soil.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Two organisms belong to the same order. Which of the following must they also share?",
+              "options": ["The same genus", "The same class", "The same family", "The same species"],
+              "answer": "B",
+              "explanation": "Each level of classification lies inside the level above it, so organisms in the same order must also be in the same class, phylum and kingdom. They may still belong to different families, genera and species.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Cells",
+          "videos": [
+            {
+              "title": "The Cell Theory and the Light Microscope",
+              "description": "Introduces the cell theory and shows how to use a light microscope, prepare a simple slide of onion epidermis and calculate magnification.",
+              "duration_minutes": 21
+            },
+            {
+              "title": "Cell Organelles and Their Functions",
+              "description": "Describes the structure and function of the nucleus, mitochondria, ribosomes, chloroplasts, vacuoles and cell membrane, and compares plant and animal cells.",
+              "duration_minutes": 34
+            },
+            {
+              "title": "Diffusion, Osmosis and Active Transport",
+              "description": "Explains how substances move into and out of cells, and what happens to plant and animal cells placed in dilute and concentrated solutions.",
+              "duration_minutes": 27
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which organelle is the main site of aerobic respiration in a cell?",
+              "options": ["Ribosome", "Golgi apparatus", "Mitochondrion", "Vacuole"],
+              "answer": "C",
+              "explanation": "Mitochondria carry out aerobic respiration, releasing energy from glucose as ATP. Ribosomes make proteins, the Golgi apparatus packages and transports substances, and vacuoles store water and other materials.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A student views onion cells using a 10× eyepiece lens and a 40× objective lens. What is the total magnification?",
+              "options": ["50×", "400×", "30×", "4000×"],
+              "answer": "B",
+              "explanation": "Total magnification = eyepiece magnification × objective magnification = 10 × 40 = 400×.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Which structure is found in plant cells but NOT in animal cells?",
+              "options": ["Cell wall", "Cell membrane", "Nucleus", "Mitochondrion"],
+              "answer": "A",
+              "explanation": "Plant cells have a cellulose cell wall, as well as chloroplasts and a large central vacuole. Animal cells have a cell membrane, a nucleus and mitochondria, but no cell wall.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A red blood cell is placed in distilled water. What is most likely to happen?",
+              "options": [
+                "It shrinks because water moves out of it by osmosis.",
+                "It stays the same because the solution is isotonic.",
+                "It gains salt by active transport.",
+                "It swells and may burst because water moves into it by osmosis."
+              ],
+              "answer": "D",
+              "explanation": "Distilled water is more dilute (hypotonic) than the cytoplasm of the red blood cell, so water enters the cell by osmosis. Animal cells have no cell wall to resist the pressure, so the cell swells and may burst.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

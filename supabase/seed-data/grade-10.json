@@ -1,0 +1,570 @@
+{
+  "grade": 10,
+  "subjects": [
+    {
+      "key": "math",
+      "name": "Mathematics",
+      "teacher_name": "Mr. Henok Assefa",
+      "chapters": [
+        {
+          "title": "Polynomial Functions",
+          "videos": [
+            {
+              "title": "Introduction to Polynomial Functions",
+              "description": "Defines polynomial functions and identifies their degree, leading coefficient and constant term, with examples of linear, quadratic and cubic functions.",
+              "duration_minutes": 19
+            },
+            {
+              "title": "Polynomial Division and the Division Algorithm",
+              "description": "Works through long division and synthetic division of polynomials and writes the result in the form f(x) = d(x)q(x) + r(x).",
+              "duration_minutes": 33
+            },
+            {
+              "title": "The Remainder Theorem, Factor Theorem and Rational Zeros",
+              "description": "Uses the remainder and factor theorems to find remainders and factors quickly, and the rational root theorem to list the possible rational zeros of a polynomial.",
+              "duration_minutes": 36
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What are the degree and the leading coefficient of f(x) = 3x⁴ − 2x⁵ + 7x − 1?",
+              "options": [
+                "Degree 4, leading coefficient 3",
+                "Degree 5, leading coefficient −2",
+                "Degree 5, leading coefficient 2",
+                "Degree 4, leading coefficient −1"
+              ],
+              "answer": "B",
+              "explanation": "The highest power of x is x⁵, so the degree is 5. The leading coefficient is the coefficient of that term, which is −2.",
+              "difficulty": 1
+            },
+            {
+              "stem": "What is the remainder when f(x) = x³ − 4x² + 2x + 5 is divided by x − 3?",
+              "options": ["2", "−2", "−64", "5"],
+              "answer": "A",
+              "explanation": "By the remainder theorem, the remainder is f(3) = 3³ − 4(3²) + 2(3) + 5 = 27 − 36 + 6 + 5 = 2.",
+              "difficulty": 2
+            },
+            {
+              "stem": "For what value of k is x + 2 a factor of p(x) = x³ + kx² − x − 2?",
+              "options": ["−2", "1", "2", "4"],
+              "answer": "C",
+              "explanation": "By the factor theorem, p(−2) = 0: (−2)³ + k(−2)² − (−2) − 2 = −8 + 4k + 2 − 2 = 4k − 8 = 0, so k = 2.",
+              "difficulty": 2
+            },
+            {
+              "stem": "The rational root theorem gives a list of possible rational zeros of f(x) = 2x³ − 3x² + 5x + 6. Which of the following is NOT on that list?",
+              "options": ["−6", "3/2", "−1/2", "1/3"],
+              "answer": "D",
+              "explanation": "A possible rational zero p/q must have p dividing the constant term 6 and q dividing the leading coefficient 2, giving ±1, ±2, ±3, ±6, ±1/2 and ±3/2. The denominator of 1/3 is 3, which does not divide 2, so 1/3 is not on the list.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Exponential and Logarithmic Functions",
+          "videos": [
+            {
+              "title": "Laws of Exponents and Logarithms",
+              "description": "Reviews the laws of exponents, defines the logarithm as the inverse of exponentiation, and applies the product, quotient and power laws of logarithms.",
+              "duration_minutes": 28
+            },
+            {
+              "title": "Graphs of Exponential and Logarithmic Functions",
+              "description": "Sketches y = aˣ and y = logₐ x, compares exponential growth and decay, and identifies the domain, range, intercepts and asymptotes of each graph.",
+              "duration_minutes": 31
+            },
+            {
+              "title": "Exponential Equations and Applications",
+              "description": "Solves exponential and logarithmic equations and applies them to compound interest and population growth problems.",
+              "duration_minutes": 38
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Evaluate log 20 + log 5, where the logarithms are to base 10.",
+              "options": ["log 25", "1", "2", "100"],
+              "answer": "C",
+              "explanation": "By the product law, log 20 + log 5 = log (20 × 5) = log 100 = 2, because 10² = 100.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Solve for x: 3ˣ⁺¹ = 81",
+              "options": ["2", "3", "4", "27"],
+              "answer": "B",
+              "explanation": "Write 81 as a power of 3: 81 = 3⁴. Then 3ˣ⁺¹ = 3⁴, so x + 1 = 4 and x = 3.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Almaz deposits 10,000 birr in a savings account that pays 10% interest compounded annually. How much money will she have after 2 years?",
+              "options": ["12,000 birr", "11,000 birr", "12,210 birr", "12,100 birr"],
+              "answer": "D",
+              "explanation": "A = P(1 + r)ⁿ = 10,000 × (1.10)² = 10,000 × 1.21 = 12,100 birr. Simple interest would give only 12,000 birr, because it ignores interest earned on interest.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Solve for x: log₂ x + log₂ (x − 2) = 3",
+              "options": ["x = 4 only", "x = −2 only", "x = 4 or x = −2", "x = 2"],
+              "answer": "A",
+              "explanation": "log₂ [x(x − 2)] = 3, so x(x − 2) = 2³ = 8, giving x² − 2x − 8 = 0 and (x − 4)(x + 2) = 0. x = −2 is rejected because log₂ of a negative number is undefined, so x = 4 only.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "english",
+      "name": "English",
+      "teacher_name": "Ms. Bethlehem Kebede",
+      "chapters": [
+        {
+          "title": "Population Growth",
+          "videos": [
+            {
+              "title": "Reading: Population Growth",
+              "description": "Reads a passage on the causes and effects of rapid population growth in Ethiopia and the world, and practises word formation and phrasal verbs from the text.",
+              "duration_minutes": 28
+            },
+            {
+              "title": "Degrees of Comparison",
+              "description": "Reviews comparative and superlative forms, irregular forms such as good, better, best, and the as … as structure, using population data for practice.",
+              "duration_minutes": 21
+            },
+            {
+              "title": "Simple Present vs. Present Perfect",
+              "description": "Contrasts the simple present for general facts with the present perfect for changes that started in the past and continue up to now.",
+              "duration_minutes": 24
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Choose the correct word: “Ethiopia is one of the _____ populous countries in Africa.”",
+              "options": ["more", "much", "most", "many"],
+              "answer": "C",
+              "explanation": "After “one of the” we need a superlative. “Populous” is a long adjective, so its superlative is formed with “most”: “the most populous”.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Choose the correct verb: “Since 1990, Ethiopia's population _____ more than doubled.”",
+              "options": ["has", "is", "was", "have"],
+              "answer": "A",
+              "explanation": "“Since 1990” describes a change that started in the past and continues up to now, so the present perfect is needed. The subject “population” is singular, so the auxiliary is “has”.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Choose the correct relative pronoun: “Countries _____ populations grow quickly need to build more schools and health centres.”",
+              "options": ["who", "which", "whose", "whom"],
+              "answer": "C",
+              "explanation": "“Whose” shows possession: the populations belong to the countries. “Who” and “whom” refer to people, and “which” cannot be followed by a noun to show possession in this way.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Read the passage and answer the question. “A growing population can be an advantage. When young people are healthy, educated and able to find productive jobs, they can speed up a country's economic growth. However, if schools, health services and jobs do not expand as fast as the population, the same growth can lead to unemployment and pressure on farmland.” What is the writer's main purpose?",
+              "options": [
+                "To argue that population growth is always harmful",
+                "To show that the effects of population growth depend on how well a country prepares for it",
+                "To describe the history of Ethiopia's population",
+                "To persuade young people to move to cities"
+              ],
+              "answer": "B",
+              "explanation": "The writer presents a possible benefit and a possible problem, and links the outcome to whether schools, health services and jobs keep up with the population. The passage never says growth is always harmful, and it does not discuss history or migration.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Travel Behaviors",
+          "videos": [
+            {
+              "title": "Reading: Travel Behaviors",
+              "description": "Reads a passage on why and how people travel, and learns travel vocabulary and phrasal verbs such as set off, check in and get around.",
+              "duration_minutes": 26
+            },
+            {
+              "title": "The Simple Past Tense",
+              "description": "Practises regular and irregular past forms for describing trips and past experiences, including negatives and questions with did.",
+              "duration_minutes": 20
+            },
+            {
+              "title": "Simple, Compound and Complex Sentences",
+              "description": "Identifies sentence types by their structure and shows how to join ideas with coordinating and subordinating conjunctions when writing about a journey.",
+              "duration_minutes": 25
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Choose the correct verb: “Last year my family _____ to Lalibela by bus to celebrate Genna.”",
+              "options": ["go", "goes", "gone", "went"],
+              "answer": "D",
+              "explanation": "“Last year” refers to a finished time in the past, so the simple past is needed. “Go” is an irregular verb, and its simple past form is “went”.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Choose the phrasal verb that best completes the sentence: “We _____ at 5:00 a.m. so that we could reach Gondar before dark.”",
+              "options": ["set off", "put off", "gave up", "ran out"],
+              "answer": "A",
+              "explanation": "“Set off” means to start a journey, which fits leaving early to arrive before dark. “Put off” means postpone, “gave up” means stopped trying and “ran out” means had none left.",
+              "difficulty": 2
+            },
+            {
+              "stem": "What type of sentence is this? “Although the road was rough, we enjoyed the journey.”",
+              "options": ["Simple sentence", "Compound sentence", "Compound-complex sentence", "Complex sentence"],
+              "answer": "D",
+              "explanation": "The sentence has one independent clause (“we enjoyed the journey”) and one dependent clause introduced by the subordinating conjunction “although”, so it is a complex sentence.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Read the passage and choose the best summary. “Before the Addis Ababa–Djibouti railway opened, most travellers and goods between the two cities went by road, a journey that could take about three days. Today the electric train covers the distance in roughly twelve hours, and many traders prefer it because their goods arrive faster and more safely. Road transport, however, is still important for towns that the railway does not reach.”",
+              "options": [
+                "The railway has completely replaced road transport between Ethiopia and Djibouti.",
+                "The electric railway has made travel between Addis Ababa and Djibouti much faster, but roads are still needed for other towns.",
+                "Traders prefer road transport because it is cheaper and safer.",
+                "The train journey from Addis Ababa to Djibouti takes about three days."
+              ],
+              "answer": "B",
+              "explanation": "A good summary keeps the main points: the railway is much faster and popular with traders, but roads remain important for places the railway does not serve. The other options contradict the passage or give wrong details.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics",
+      "name": "Physics",
+      "teacher_name": "Mr. Samuel Gebremedhin",
+      "chapters": [
+        {
+          "title": "Vector Quantities",
+          "videos": [
+            {
+              "title": "Scalars and Vectors",
+              "description": "Distinguishes scalar quantities such as mass and time from vector quantities such as displacement and force, and shows how vectors are represented by arrows.",
+              "duration_minutes": 17
+            },
+            {
+              "title": "Adding Vectors Graphically and Analytically",
+              "description": "Adds vectors with the triangle and parallelogram methods, and uses Pythagoras' theorem and trigonometry to find the magnitude and direction of the resultant.",
+              "duration_minutes": 32
+            },
+            {
+              "title": "Resolving Vectors into Components",
+              "description": "Splits a vector into horizontal and vertical components using sine and cosine, and adds vectors by adding their components.",
+              "duration_minutes": 29
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which of the following is a vector quantity?",
+              "options": ["Mass", "Temperature", "Displacement", "Time"],
+              "answer": "C",
+              "explanation": "A vector has both magnitude and direction. Displacement (for example, 5 km north) is a vector, while mass, temperature and time have magnitude only, so they are scalars.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Two forces of 6 N and 8 N act on an object at right angles to each other. What is the magnitude of their resultant?",
+              "options": ["2 N", "10 N", "14 N", "48 N"],
+              "answer": "B",
+              "explanation": "For two perpendicular forces, R = √(6² + 8²) = √(36 + 64) = √100 = 10 N.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A rope pulls a cart with a force of 20 N at 30° above the horizontal. What is the horizontal component of the force? (cos 30° ≈ 0.866)",
+              "options": ["10.0 N", "11.5 N", "20.0 N", "17.3 N"],
+              "answer": "D",
+              "explanation": "Horizontal component = F cos θ = 20 N × cos 30° = 20 × 0.866 ≈ 17.3 N. (10.0 N is the vertical component, F sin 30°.)",
+              "difficulty": 2
+            },
+            {
+              "stem": "Two forces of 5 N and 12 N act at the same point. Which of the following CANNOT be the magnitude of their resultant?",
+              "options": ["4 N", "7 N", "13 N", "17 N"],
+              "answer": "A",
+              "explanation": "The resultant lies between the difference and the sum of the forces: 12 − 5 = 7 N (opposite directions) up to 12 + 5 = 17 N (same direction). 13 N is possible when they are at right angles (√(5² + 12²) = 13), but 4 N is less than 7 N, so it is impossible.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Uniformly Accelerated Motion",
+          "videos": [
+            {
+              "title": "Average and Instantaneous Velocity",
+              "description": "Explains the difference between average and instantaneous velocity and shows how to find each from a position–time graph.",
+              "duration_minutes": 22
+            },
+            {
+              "title": "Equations of Motion with Constant Acceleration",
+              "description": "Derives and applies v = u + at, s = ut + ½at² and v² = u² + 2as to solve problems about cars, buses and runners.",
+              "duration_minutes": 37
+            },
+            {
+              "title": "Free Fall and Vertical Motion",
+              "description": "Applies the equations of motion to objects dropped or thrown vertically, taking g ≈ 10 m/s² and ignoring air resistance.",
+              "duration_minutes": 30
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What does the slope (gradient) of a velocity–time graph represent?",
+              "options": ["Displacement", "Acceleration", "Distance", "Speed"],
+              "answer": "B",
+              "explanation": "Slope = change in velocity ÷ change in time, which is the definition of acceleration. The area under a velocity–time graph gives the displacement.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A car moving at 20 m/s brakes uniformly and stops in 4 s. How far does it travel while braking?",
+              "options": ["40 m", "80 m", "20 m", "5 m"],
+              "answer": "A",
+              "explanation": "For uniform acceleration, s = ½(u + v)t = ½ × (20 m/s + 0 m/s) × 4 s = 40 m.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A ball is thrown vertically upward with a speed of 20 m/s. What maximum height does it reach? (Take g = 10 m/s² and ignore air resistance.)",
+              "options": ["10 m", "40 m", "20 m", "200 m"],
+              "answer": "C",
+              "explanation": "At the highest point v = 0. Using v² = u² − 2gh: 0 = 20² − 2 × 10 × h, so h = 400 ÷ 20 = 20 m.",
+              "difficulty": 2
+            },
+            {
+              "stem": "A bus accelerates uniformly from 10 m/s to 30 m/s over a distance of 100 m. What is its acceleration?",
+              "options": ["0.2 m/s²", "2 m/s²", "8 m/s²", "4 m/s²"],
+              "answer": "D",
+              "explanation": "Using v² = u² + 2as: 30² = 10² + 2 × a × 100, so 900 = 100 + 200a, which gives 200a = 800 and a = 4 m/s².",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "chemistry",
+      "name": "Chemistry",
+      "teacher_name": "Ms. Rahel Desta",
+      "chapters": [
+        {
+          "title": "Chemical Reactions and Stoichiometry",
+          "videos": [
+            {
+              "title": "Writing and Balancing Chemical Equations",
+              "description": "Applies the law of conservation of mass to write balanced chemical equations with state symbols, step by step.",
+              "duration_minutes": 24
+            },
+            {
+              "title": "Types of Chemical Reactions",
+              "description": "Classifies reactions as combination, decomposition, single displacement or double displacement, and introduces oxidation and reduction.",
+              "duration_minutes": 27
+            },
+            {
+              "title": "Mole Ratios, Limiting Reactants and Percent Yield",
+              "description": "Uses balanced equations to calculate moles and masses of products, identify the limiting reactant and find the percent yield of a reaction.",
+              "duration_minutes": 41
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What type of reaction is shown? Zn + CuSO₄ → ZnSO₄ + Cu",
+              "options": ["Combination", "Decomposition", "Single displacement", "Double displacement"],
+              "answer": "C",
+              "explanation": "Zinc is more reactive than copper, so it replaces copper in copper(II) sulfate. One element displacing another from its compound is a single displacement reaction.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Which set of coefficients, in the order Al, O₂, Al₂O₃, balances the equation Al + O₂ → Al₂O₃?",
+              "options": ["2, 3, 1", "4, 3, 2", "1, 3, 2", "4, 2, 3"],
+              "answer": "B",
+              "explanation": "4Al + 3O₂ → 2Al₂O₃ has 4 aluminium atoms and 3 × 2 = 6 oxygen atoms on the left, and 2 × 2 = 4 aluminium atoms and 2 × 3 = 6 oxygen atoms on the right, so it is balanced.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In the reaction N₂ + 3H₂ → 2NH₃, 2 mol of N₂ is mixed with 3 mol of H₂. What is the maximum amount of NH₃ that can form?",
+              "options": ["1 mol", "4 mol", "6 mol", "2 mol"],
+              "answer": "D",
+              "explanation": "2 mol of N₂ would need 2 × 3 = 6 mol of H₂, but only 3 mol is available, so H₂ is the limiting reactant. 3 mol of H₂ produces 3 × (2/3) = 2 mol of NH₃.",
+              "difficulty": 2
+            },
+            {
+              "stem": "When 10.0 g of CaCO₃ is heated, it decomposes: CaCO₃ → CaO + CO₂. If 4.2 g of CaO is obtained, what is the percent yield? (Ca = 40, C = 12, O = 16)",
+              "options": ["42%", "56%", "75%", "84%"],
+              "answer": "C",
+              "explanation": "Molar mass of CaCO₃ = 40 + 12 + 3 × 16 = 100 g/mol, so 10.0 g = 0.100 mol, which can give 0.100 mol of CaO = 0.100 × 56 g = 5.6 g (theoretical yield). Percent yield = (4.2 ÷ 5.6) × 100 = 75%.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "title": "Solutions",
+          "videos": [
+            {
+              "title": "Solutions, Solutes and Solvents",
+              "description": "Defines a solution and its components, compares solutions with suspensions and colloids, and explains the dissolving process and the rule “like dissolves like”.",
+              "duration_minutes": 21
+            },
+            {
+              "title": "Solubility and the Factors That Affect It",
+              "description": "Explains saturated, unsaturated and supersaturated solutions and how temperature, pressure and the nature of the solute and solvent affect solubility.",
+              "duration_minutes": 26
+            },
+            {
+              "title": "Concentration: Percent by Mass, Molarity and Dilution",
+              "description": "Calculates the concentration of solutions as percent by mass and as molarity, and shows how to prepare a dilute solution using M₁V₁ = M₂V₂.",
+              "duration_minutes": 39
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which of the following substances dissolves most readily in water?",
+              "options": ["Kerosene", "Table salt (NaCl)", "Candle wax", "Cooking oil"],
+              "answer": "B",
+              "explanation": "Water is a polar solvent, and “like dissolves like”. Ionic sodium chloride dissolves well in water, while non-polar kerosene, wax and oil do not.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A student dissolves 20 g of sugar in 180 g of water. What is the percent by mass of sugar in the solution?",
+              "options": ["11.1%", "20%", "10%", "90%"],
+              "answer": "C",
+              "explanation": "Mass of solution = 20 g + 180 g = 200 g. Percent by mass = (20 g ÷ 200 g) × 100 = 10%.",
+              "difficulty": 2
+            },
+            {
+              "stem": "What is the molarity of a solution made by dissolving 4.0 g of NaOH in enough water to make 500 mL of solution? (Na = 23, O = 16, H = 1)",
+              "options": ["0.20 M", "0.10 M", "0.80 M", "2.0 M"],
+              "answer": "A",
+              "explanation": "Molar mass of NaOH = 23 + 16 + 1 = 40 g/mol, so 4.0 g ÷ 40 g/mol = 0.10 mol. Molarity = 0.10 mol ÷ 0.500 L = 0.20 M.",
+              "difficulty": 2
+            },
+            {
+              "stem": "How much water must be added to 50 mL of 2.0 M HCl to dilute it to 0.50 M?",
+              "options": ["100 mL", "200 mL", "150 mL", "250 mL"],
+              "answer": "C",
+              "explanation": "M₁V₁ = M₂V₂ gives 2.0 M × 50 mL = 0.50 M × V₂, so V₂ = 200 mL. The volume of water to add is 200 mL − 50 mL = 150 mL.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "biology",
+      "name": "Biology",
+      "teacher_name": "Mr. Ermias Ayele",
+      "chapters": [
+        {
+          "title": "Biochemical Molecules",
+          "videos": [
+            {
+              "title": "Carbohydrates and Food Tests",
+              "description": "Describes monosaccharides, disaccharides and polysaccharides, and shows how to test foods for starch with iodine solution and for reducing sugars with Benedict's solution.",
+              "duration_minutes": 25
+            },
+            {
+              "title": "Proteins, Lipids and Nucleic Acids",
+              "description": "Explains the building blocks and functions of proteins, lipids and nucleic acids, including peptide bonds and the double-helix structure of DNA.",
+              "duration_minutes": 35
+            },
+            {
+              "title": "Enzymes: How They Work",
+              "description": "Explains the lock-and-key model of enzyme action and how temperature, pH and substrate concentration affect the rate of enzyme-controlled reactions.",
+              "duration_minutes": 28
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which reagent turns blue-black when it is added to a food sample containing starch?",
+              "options": ["Benedict's solution", "Iodine solution", "Biuret reagent", "Ethanol"],
+              "answer": "B",
+              "explanation": "Iodine solution changes from yellow-brown to blue-black when starch is present. Benedict's solution tests for reducing sugars, biuret reagent for proteins and ethanol for fats.",
+              "difficulty": 1
+            },
+            {
+              "stem": "Sucrose, the sugar produced from sugarcane at factories such as Wonji, is a disaccharide made of which two monosaccharides?",
+              "options": ["Glucose + glucose", "Glucose + galactose", "Glucose + fructose", "Fructose + galactose"],
+              "answer": "C",
+              "explanation": "Sucrose forms when glucose and fructose join in a condensation reaction. Glucose + glucose forms maltose, and glucose + galactose forms lactose.",
+              "difficulty": 2
+            },
+            {
+              "stem": "In a DNA molecule, 30% of the bases are adenine (A). What percentage of the bases are guanine (G)?",
+              "options": ["20%", "30%", "40%", "70%"],
+              "answer": "A",
+              "explanation": "Adenine pairs with thymine, so T = 30% and A + T = 60%. The remaining 100% − 60% = 40% is shared equally between G and C, so G = 20%.",
+              "difficulty": 3
+            },
+            {
+              "stem": "Why does the activity of a human enzyme fall sharply when it is heated to 70 °C?",
+              "options": [
+                "The substrate is used up too quickly.",
+                "Molecules move more slowly at high temperatures.",
+                "The enzyme turns into a substrate.",
+                "The enzyme is denatured, so its active site changes shape and the substrate no longer fits."
+              ],
+              "answer": "D",
+              "explanation": "Enzymes are proteins. High temperatures break the bonds that hold an enzyme's shape, so its active site is permanently changed (denatured) and can no longer bind the substrate.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "title": "Cell Reproduction",
+          "videos": [
+            {
+              "title": "The Cell Cycle and Interphase",
+              "description": "Describes the stages of the cell cycle (G₁, S, G₂ and the mitotic phase) and what happens to DNA during interphase.",
+              "duration_minutes": 19
+            },
+            {
+              "title": "Mitosis and Cytokinesis",
+              "description": "Follows the chromosomes through prophase, metaphase, anaphase and telophase, and compares cytokinesis in plant and animal cells.",
+              "duration_minutes": 31
+            },
+            {
+              "title": "Meiosis and Genetic Variation",
+              "description": "Explains the two divisions of meiosis, crossing over and independent assortment, and compares meiosis with mitosis.",
+              "duration_minutes": 36
+            }
+          ],
+          "questions": [
+            {
+              "stem": "During which phase of the cell cycle is DNA replicated?",
+              "options": ["G₁ phase", "S phase", "G₂ phase", "Metaphase"],
+              "answer": "B",
+              "explanation": "DNA is copied during the S (synthesis) phase of interphase, so each chromosome consists of two identical sister chromatids before mitosis begins.",
+              "difficulty": 1
+            },
+            {
+              "stem": "In which stage of mitosis do the chromosomes line up at the equator of the cell?",
+              "options": ["Prophase", "Anaphase", "Telophase", "Metaphase"],
+              "answer": "D",
+              "explanation": "In metaphase, spindle fibres attach to the centromeres and the chromosomes line up along the equator (metaphase plate) before the sister chromatids separate in anaphase.",
+              "difficulty": 1
+            },
+            {
+              "stem": "A human cell with 46 chromosomes completes meiosis. What is produced?",
+              "options": [
+                "2 cells, each with 46 chromosomes",
+                "2 cells, each with 23 chromosomes",
+                "4 cells, each with 23 chromosomes",
+                "4 cells, each with 46 chromosomes"
+              ],
+              "answer": "C",
+              "explanation": "Meiosis has two divisions, so one cell produces four cells. The chromosome number is halved, so each cell is haploid with 46 ÷ 2 = 23 chromosomes.",
+              "difficulty": 2
+            },
+            {
+              "stem": "Which event during meiosis produces new combinations of alleles on the same chromosome?",
+              "options": [
+                "Crossing over between homologous chromosomes in prophase I",
+                "Separation of sister chromatids in anaphase II",
+                "DNA replication in the S phase",
+                "Cytokinesis after telophase II"
+              ],
+              "answer": "A",
+              "explanation": "In prophase I, homologous chromosomes pair up and non-sister chromatids exchange segments (crossing over). This mixes alleles from the maternal and paternal chromosomes, creating genetic variation.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
